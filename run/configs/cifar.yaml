@@ -1,0 +1,37 @@
+data:
+  dataset: cifar10
+  seed: ~
+model:
+  arch: resnet9
+  pretrained: 0
+optimizer:
+  lr: 0.1
+  wd: 0.0005
+  momentum: 0.9
+  use_lr_schedule: 1
+  num_decay: 4
+  lr_decay_gap: 20
+  lr_decay_factor: 0.5
+dataloading:
+  batch_size: 256
+  num_workers: 2
+  pin_memory: 1
+  shuffle: 1
+  use_ffcv: 1
+  os_cache: 1
+  subsample_prob: 1
+training:
+  model_selection_loader: test
+  model_selection_crit: acc
+  max_train_epochs: 100
+  train_stop_epsilon: 0.02
+  train_stop_crit: loss
+  eval_epoch_gap: 5
+  device_id: 0
+  enable_logging: 0
+  save_root_dir: ~/out/dmgen/cifar10/misc
+  checkpoint_type: model
+expt:
+  expt_name: misc
+  num_runs: 1
+  aug_scheme: train_alt

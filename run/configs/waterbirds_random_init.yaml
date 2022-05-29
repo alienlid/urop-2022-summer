@@ -1,0 +1,40 @@
+data:
+  dataset: waterbirds
+  seed: ~
+model:
+  arch: resnet18
+  pretrained: 0
+optimizer:
+  lr: 0.1
+  wd: 0.0001
+  momentum: 0.9
+  use_lr_schedule: 1
+  num_decay: 3
+  lr_decay_gap: 15
+  lr_decay_factor: 0.25
+dataloading:
+  batch_size: 128
+  num_workers: 2
+  pin_memory: 1
+  shuffle: 1
+  use_ffcv: 1
+  os_cache: 1
+  subsample_prob: 1
+training:
+  model_selection_loader: val
+  model_selection_crit: acc
+  max_train_epochs: 50
+  train_stop_epsilon: 0.000
+  train_stop_crit: loss
+  eval_epoch_gap: 5
+  device_id: 0
+  enable_logging: 0
+  save_root_dir: ~/out/dmgen/waterbirds/misc
+  checkpoint_type: model
+expt:
+  expt_name: misc
+  num_runs: 1
+  aug_scheme: train # {train/sagawa, train_creager, train_heavyaug}
+  sbatch: 0
+  sbatch_jobid: ~
+  sbatch_expt: final
