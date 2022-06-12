@@ -235,16 +235,16 @@ def fog(x, severity=1):
 
 
 def frost(x, severity=1):
-    c = [(1, 0.2), (1, 0.3), (0.9, 0.4), (0.85, 0.4), (0.75, 0.45)][severity - 1]
-    idx = np.random.randint(5)
-    filename = ['./frost1.png', './frost2.png', './frost3.png', './frost4.jpg', './frost5.jpg', './frost6.jpg'][idx]
-    frost = cv2.imread(filename)
-    frost = cv2.resize(frost, (0, 0), fx=0.2, fy=0.2)
-    # randomly crop and convert to rgb
-    x_start, y_start = np.random.randint(0, frost.shape[0] - 32), np.random.randint(0, frost.shape[1] - 32)
-    frost = frost[x_start:x_start + 32, y_start:y_start + 32][..., [2, 1, 0]]
-
-    return np.clip(c[0] * np.array(x) + c[1] * frost, 0, 255)
+	c = [(1, 0.2), (1, 0.3), (0.9, 0.4), (0.85, 0.4), (0.75, 0.45)][severity - 1]
+	idx = np.random.randint(5)
+	filename = ['frost1.png', 'frost2.png', 'frost3.png', 'frost4.jpg', 'frost5.jpg', 'frost6.jpg'][idx]
+	frost = cv2.imread(filename)
+	frost = cv2.resize(frost, (0, 0), fx=0.2, fy=0.2)
+	# randomly crop and convert to rgb
+	x_start, y_start = np.random.randint(0, frost.shape[0] - 32), np.random.randint(0, frost.shape[1] - 32)
+	frost = frost[x_start:x_start + 32, y_start:y_start + 32][..., [2, 1, 0]]
+	
+	return np.clip(c[0] * np.array(x) + c[1] * frost, 0, 255)
 
 
 def snow(x, severity=1):
@@ -423,7 +423,7 @@ d = collections.OrderedDict()
 d['Gaussian Noise'] = gaussian_noise
 d['Shot Noise'] = shot_noise
 d['Impulse Noise'] = impulse_noise
-d['Defocus Blur'] = defocus_blur
+d['Defocus Blur'] = defocus_blur 
 d['Glass Blur'] = glass_blur
 d['Motion Blur'] = motion_blur
 d['Zoom Blur'] = zoom_blur
@@ -451,9 +451,11 @@ for method_name in d.keys():
 	
 	for severity in range(1,6):
 		corruption = lambda clean_img: d[method_name](clean_img, severity)
-	
-		for img in train_data.data:
+		print(f'Severity: {severity}')
+		for i, img in enumerate(train_data.data):
 			cifar_c.append(np.uint8(corruption(convert_img(img))))
+			if (i + 1) % 500 == 0:
+				print(f'{(i + 1) / 500}% done')
 	
 	np.save('data/CIFAR-10-C-TRAIN/' + d[method_name].__name__ + '.npy',
             np.array(cifar_c).astype(np.uint8))

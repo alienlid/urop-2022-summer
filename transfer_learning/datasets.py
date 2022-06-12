@@ -12,7 +12,7 @@ class CIFAR10C(dset.VisionDataset):
 	def __init__(self, root, train, corruption, severity, transform):
 		super(CIFAR10C, self).__init__(root = root, transform = transform)
 		(num_of_imgs, folder) = (50000, 'CIFAR-10-C-TRAIN') if train else (10000, 'CIFAR-10-C-TEST')
-		self.data = np.load(os.path.join(root, folder, corruption + '.npy'))[(severity - 1) * num_of_imgs : severity * num_of_imgs]
+		self.data = np.load(os.path.join(root, folder, corruption + str(severity) + '.npy'))
 		self.targets = np.load(os.path.join(root, folder, 'labels.npy'))
         
 	def __getitem__(self, index):
@@ -75,5 +75,5 @@ def loaders(pretrained, target, corruption = None, severity = 1):
 	return train_loader, test_loader
 
 if __name__ == "__main__":
-	# ~ train_loader, test_loader = loaders('random_init', 'cifar10-c', 'gaussian_noise', severity = 3);
+	train_loader, test_loader = loaders('random_init', 'cifar10-c', 'gaussian_noise', severity = 3);
 	pass
