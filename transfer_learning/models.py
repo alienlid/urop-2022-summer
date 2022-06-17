@@ -4,10 +4,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torchvision
-import torchvision.transforms as transforms
-import torchvision.datasets as dset
-import timm
-# ~ from robustness import datasets, model_utils
+import torchvision.transforms as T
+import torchvision.datasets as datasets
 
 class BasicBlock(nn.Module):
   expansion = 1
@@ -101,51 +99,22 @@ class ResNet(nn.Module):
     out = self.linear(out)
     return out
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-
 def get_model(pretrained):
-	if pretrained == 'random_init':
-		return ResNet(BasicBlock, [2, 2, 2, 2])
-	elif pretrained == 'imagenet':
-		model = torchvision.models.resnet18(pretrained = True)
-		model.fc = nn.Linear(512, 10)
-		return model
-	elif pretrained == 'imagenet-21':
-		model = torchvision.models.resnet50()
-		state = torch.load('pretrained-models/resnet50_miil_21k.pth')
-		for key in model.state_dict():
-			if 'num_batches_tracked' in key:
-				continue
-			p = model.state_dict()[key]
-			ip = state['state_dict'][key]
-			if p.shape == ip.shape:
-				p.data.copy_(ip.data)
-		model.eval()
-		return model
-
-# ~ cifar10 = datasets.CIFAR('data')
-# ~ models['robust-imagenet'], _ = model_utils.make_and_restore_model(arch = 'resnet50', dataset = cifar10, resume_path = 'pretrained-models/resnet50_l2_eps0.03.ckpt')
-# ~ checkpoint = torch.load('pretrained-models/resnet50_l2_eps0.03.ckpt', map_location = 'cpu')
-# ~ print(checkpoint['model'].keys())
-# ~ for key in models['robust-imagenet'].state_dict():
-	# ~ if 'num_batchs_tracked' in key:
-		# ~ continue
-	# ~ p = models['robust-imagenet'].state_dict()[key]
-	# ~ ip = checkpoint['model'][key]
-	# ~ if p.shape == ip.shape:
-		# ~ p.data.copy_(ip.data)
-# ~ models['robust-imagenet'].eval()
-# ~ classifier_model = torchvision.models.resnet50()
-# ~ model = AttackerModel(classifier_model, dataset)
-# ~ resume_path = 'pretrained-models/resnet50_l2_eps0.03.ckpt'
-# ~ # optionally resume from a checkpoint
-# ~ checkpoint = torch.load(resume_path, pickle_module=dill)
-
-# ~ # Makes us able to load models saved with legacy versions
-# ~ state_dict_path = 'model'
-
-# ~ sd = checkpoint[state_dict_path]
-# ~ sd = {k[len('module.'):]:v for k,v in sd.items()}
-# ~ model.load_state_dict(sd)
-# ~ print("=> loaded checkpoint '{}' (epoch {})".format(resume_path, checkpoint['epoch']))
-
+  if pretrained == 'random_init':
+    return ResNet(BasicBlock, [2, 2, 2, 2])
+  elif pretrained == 'imagenet':
+    model = torchvision.models.resnet18(pretrained = True)
+    model.fc = nn.Linear(512, 10)
+    return model
+  elif pretrained == 'imagenet-21k':
+    model = torchvision.models.resnet50()
+    state = torch.load('pretrained-models/resnet50_miil_21k.pth')
+    for key in model.state_dict():
+    	if 'num_batches_tracked' in key:
+    		continue
+    	p = model
+    	ip = state['state_dict'][key]
+    	if p.shape == ip.shape:
+    		p.data.copy_(ip.data)
+    model.eval()
+    return model
