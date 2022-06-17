@@ -7,12 +7,12 @@ import torchvision
 import torchvision.transforms as T
 import torchvision.datasets as datasets
 from models import get_model
-from datasets import CIFAR10C, CIFAR10S
+from datasets import CIFAR10C, CIFAR10S, transform_train_scratch, transform_train_finetune, transform_test_scratch, transform_test_finetune
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
 
-epochs = 30
+epochs = 1
 learning_rate = 1e-2
 loss = nn.CrossEntropyLoss()
 
@@ -20,7 +20,7 @@ for level in [10]:
   model = get_model('random_init')
   model = model.to(device)
   optimizer = torch.optim.SGD(model.parameters(), lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
-  scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 0.1, total_steps = 15000)
+  scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 0.1, total_steps = 500)
   train_dataset = CIFAR10S('data', True, level, transform_test_scratch)
   train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 128, shuffle = True)
   test_dataset = CIFAR10S('data', False, level, transform_test_scratch)
