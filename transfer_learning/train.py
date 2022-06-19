@@ -17,6 +17,8 @@ learning_rate = 1e-2
 loss = nn.CrossEntropyLoss()
 
 severity = int(os.getenv("SLURM_ARRAY_TASK_ID"))
+print(f'Severity: {severity}')
+
 model = get_model('random_init')
 model = model.to(device)
 optimizer = torch.optim.SGD(model.parameters(), lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
