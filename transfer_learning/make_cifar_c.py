@@ -442,7 +442,8 @@ d['Spatter'] = spatter
 d['Saturate'] = saturate
 
 
-train_data = dset.CIFAR10(root = 'data', train = True, download = True)
+# ~ train_data = dset.CIFAR10(root = 'data', train = True, download = True)
+test_data = dset.CIFAR10(root = 'data', train = False, download = True)
 convert_img = trn.Compose([trn.ToTensor(), trn.ToPILImage()])
 
 for method_name in d.keys():
@@ -452,13 +453,13 @@ for method_name in d.keys():
 		cifar_c = []
 		corruption = lambda clean_img: d[method_name](clean_img, severity)
 		print(f'Severity: {severity}')
-		for i, img in enumerate(train_data.data):
+		for i, img in enumerate(test_data.data):
 			cifar_c.append(np.uint8(corruption(convert_img(img))))
-			if (i + 1) % 5000 == 0:
-				print(f'{(i + 1) / 500}% done')
+			if (i + 1) % 1000 == 0:
+				print(f'{(i + 1) / 100}% done')
 	
-		np.save('data/CIFAR-10-C-TRAIN/' + d[method_name].__name__ + str(severity) + '.npy',
+		np.save('data/CIFAR-10-C-TEST/' + d[method_name].__name__ + str(severity) + '.npy',
             np.array(cifar_c).astype(np.uint8))
 	
-np.save('data/CIFAR-10-C-TRAIN/labels.npy', np.array(train_data.targets).astype(np.uint8))
+np.save('data/CIFAR-10-C-TEST/labels.npy', np.array(test_data.targets).astype(np.uint8))
 	
