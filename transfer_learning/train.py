@@ -25,7 +25,9 @@ optimizer = torch.optim.SGD(model.parameters(), lr = learning_rate, momentum = 0
 scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 0.1, total_steps = 15000)
 train_dataset = CIFAR10C('data', True, 'gaussian_blur', severity, transform_train_scratch)
 train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 128, shuffle = True)
-test_dataset = torchvision.datasets.CIFAR10(root = 'data', train = False, download = True, transform = transform_test_scratch)
+# ~ test_dataset = torchvision.datasets.CIFAR10(root = 'data', train = False, download = True, transform = transform_test_scratch)
+# ~ test_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 128)
+test_dataset = CIFAR10C('data', False, 'gaussian_blur', severity, transform_test_scratch)
 test_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 128)
 for epoch in range(epochs):
   for x, y in train_loader:
