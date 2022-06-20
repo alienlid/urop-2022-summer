@@ -58,3 +58,5 @@ for epoch in range(epochs):
 		total += y.size(0)
 		correct += (pred.argmax(1) == y.to(device)).sum()
 	print(f'OOD accuracy: {100 * float(correct) / total}%')
+	
+torch.save(model.state_dict(), f'{severity}.pt')
