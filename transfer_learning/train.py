@@ -19,7 +19,7 @@ loss = nn.CrossEntropyLoss()
 severity = int(os.getenv("SLURM_ARRAY_TASK_ID")) % 5 + 1
 shortcut = 2 ** (int(os.getenv("SLURM_ARRAY_TASK_ID")) % 3)
 
-print(f'Severity: {severity}')
+print(f'shortcut: {shortcut}, severity: {severity}')
 
 model = get_model('imagenet')
 model = model.to(device)
