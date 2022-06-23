@@ -6,11 +6,15 @@ import torch.nn.functional as F
 import torchvision
 import torchvision.transforms as T
 import torchvision.datasets as datasets
+import gc
 from models import get_model
 from datasets import CIFAR10CS, transform_train_scratch, transform_train_finetune, transform_test_scratch, transform_test_finetune
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
+
+gc.collect()
+torch.cuda.empty_cache()
 
 epochs = 30
 learning_rate = 1e-3
