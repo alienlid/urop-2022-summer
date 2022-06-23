@@ -17,7 +17,7 @@ learning_rate = 1e-3
 loss = nn.CrossEntropyLoss()
 
 severity = int(os.getenv("SLURM_ARRAY_TASK_ID"))
-shortcut = 2
+shortcut = 3
 
 print(f'shortcut: {shortcut}, severity: {severity}')
 
