@@ -43,23 +43,22 @@ for epoch in range(epochs):
 		optimizer.step()
 		scheduler.step()
 	model.eval()
-	with torch.no_grad():
-		correct = 0
-		total = 0
-		print(f'Epoch: {epoch + 1}')
-		for x, y in IID_test_loader:
-			x = x.to(device)
-			pred = model(x)
-			total += y.size(0)
-			correct += (pred.argmax(1) == y.to(device)).sum()
-		print(f'IID accuracy: {100 * float(correct) / total}%')
-		correct = 0
-		total = 0
-		for x, y in OOD_test_loader:
-			x = x.to(device)
-			pred = model(x)
-			total += y.size(0)
-			correct += (pred.argmax(1) == y.to(device)).sum()
-		print(f'OOD accuracy: {100 * float(correct) / total}%')
+	correct = 0
+	total = 0
+	print(f'Epoch: {epoch + 1}')
+	for x, y in IID_test_loader:
+		x = x.to(device)
+		pred = model(x)
+		total += y.size(0)
+		correct += (pred.argmax(1) == y.to(device)).sum()
+	print(f'IID accuracy: {100 * float(correct) / total}%')
+	correct = 0
+	total = 0
+	for x, y in OOD_test_loader:
+		x = x.to(device)
+		pred = model(x)
+		total += y.size(0)
+		correct += (pred.argmax(1) == y.to(device)).sum()
+	print(f'OOD accuracy: {100 * float(correct) / total}%')
 	
 torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}.pt')

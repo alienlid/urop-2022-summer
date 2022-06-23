@@ -49,10 +49,9 @@ class CIFAR10CS(datasets.VisionDataset):
 		folder = 'CIFAR-10-C-TRAIN' if train else 'CIFAR-10-C-TEST'
 		cifar10 = datasets.CIFAR10(root = root, train = train, download = True)
 		data = np.load(os.path.join(root, folder, corruption + str(severity) + '.npy')) if severity else cifar10.data
-		targets = datasets.CIFAR10(root = root, train = train).targets
 		self.data = []
 		self.targets = cifar10.targets
-		for img, label in zip(data, targets):
+		for img, label in zip(data, self.targets):
 			n = np.random.randint(0, 5)
 			if n < shortcut:
 				img[0 : 3, 0 : 3] = shortcuts[label]
