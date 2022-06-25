@@ -17,7 +17,7 @@ learning_rate = 1e-3
 loss = nn.CrossEntropyLoss()
 
 severity = int(os.getenv("SLURM_ARRAY_TASK_ID"))
-shortcut = 3
+shortcut = 4
 
 print(f'shortcut: {shortcut}, severity: {severity}')
 
@@ -42,6 +42,8 @@ for epoch in range(epochs):
 		cost.backward()
 		optimizer.step()
 		scheduler.step()
+		x = x.to('cpu')
+		y = y.to('cpu')
 	model.eval()
 	correct = 0
 	total = 0
