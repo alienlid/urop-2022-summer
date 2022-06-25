@@ -52,7 +52,7 @@ class CIFAR10CS(datasets.VisionDataset):
 		self.data = []
 		self.targets = cifar10.targets
 		for img, label in zip(data, self.targets):
-			n = np.random.randint(0, 5)
+			n = np.random.randint(0, 100)
 			if n < shortcut:
 				img[0 : 3, 0 : 3] = shortcuts[label]
 			self.data.append(img)

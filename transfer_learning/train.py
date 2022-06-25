@@ -16,10 +16,8 @@ epochs = 30
 learning_rate = 1e-3
 loss = nn.CrossEntropyLoss()
 
-severity = int(os.getenv("SLURM_ARRAY_TASK_ID"))
-shortcut = 4
-
-print(f'shortcut: {shortcut}, severity: {severity}')
+severity = 0
+shortcut = int(os.getenv("SLURM_ARRAY_TASK_ID"))
 
 model = get_model('imagenet')
 model = model.to(device)
@@ -28,7 +26,7 @@ optimizer = torch.optim.SGD([{'params': not_fc}, {'params': model.fc.parameters(
 scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 15000)
 train_dataset = CIFAR10CS('data', True, 'gaussian_blur', severity, shortcut, transform_test_finetune)
 train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 128, shuffle = True)
-OOD_test_dataset = torchvision.datasets.CIFAR10(root = 'data', train = False, download = True, transform = transform_test_finetune)
+OOD_test_dataset = CIFAR10CS('data', False, 'gaussian_blur', 0, shortcut, transform_test_finetune)
 OOD_test_loader = torch.utils.data.DataLoader(dataset = OOD_test_dataset, batch_size = 128)
 IID_test_dataset = CIFAR10CS('data', False, 'gaussian_blur', severity, shortcut, transform_test_finetune)
 IID_test_loader = torch.utils.data.DataLoader(dataset = IID_test_dataset, batch_size = 128)
@@ -45,22 +43,25 @@ for epoch in range(epochs):
 		x = x.to('cpu')
 		y = y.to('cpu')
 	model.eval()
-	correct = 0
-	total = 0
-	print(f'Epoch: {epoch + 1}')
-	for x, y in IID_test_loader:
-		x = x.to(device)
-		pred = model(x)
-		total += y.size(0)
-		correct += (pred.argmax(1) == y.to(device)).sum()
-	print(f'IID accuracy: {100 * float(correct) / total}%')
-	correct = 0
-	total = 0
-	for x, y in OOD_test_loader:
-		x = x.to(device)
-		pred = model(x)
-		total += y.size(0)
-		correct += (pred.argmax(1) == y.to(device)).sum()
-	print(f'OOD accuracy: {100 * float(correct) / total}%')
-	
-torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}.pt')
+correct = 0
+total = 0
+# ~ print(f'Epoch: {epoch + 1}')
+f = open('gaussian_blur/accuracies.txt', 'a')
+for x, y in IID_test_loader:
+	x = x.to(device)
+	pred = model(x)
+	total += y.size(0)
+	correct += (pred.argmax(1) == y.to(device)).sum()
+# ~ print(f'IID accuracy: {100 * float(correct) / total}%')
+f.write(f'shortcut: {shortcut}, severity: {severity}, IID accuracy: {100 * float(correct) / total}%\n')
+correct = 0
+total = 0
+for x, y in OOD_test_loader:
+	x = x.to(device)
+	pred = model(x)
+	total += y.size(0)
+	correct += (pred.argmax(1) == y.to(device)).sum()
+# ~ print(f'OOD accuracy: {100 * float(correct) / total}%')
+f.write(f'shortcut: {shortcut}, severity: {severity}, OOD accuracy: {100 * float(correct) / total}%\n')
+
+# ~ torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}.pt')
