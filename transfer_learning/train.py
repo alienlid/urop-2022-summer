@@ -63,5 +63,5 @@ for x, y in OOD_test_loader:
 	correct += (pred.argmax(1) == y.to(device)).sum()
 # ~ print(f'OOD accuracy: {100 * float(correct) / total}%')
 f.write(f'shortcut: {shortcut}, severity: {severity}, OOD accuracy: {100 * float(correct) / total}%\n')
-
+f.close()
 # ~ torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}.pt')
