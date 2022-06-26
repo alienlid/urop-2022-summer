@@ -16,7 +16,7 @@ epochs = 30
 learning_rate = 1e-3
 loss = nn.CrossEntropyLoss()
 
-severity = 0
+severity = 1
 shortcut = int(os.getenv("SLURM_ARRAY_TASK_ID"))
 
 model = get_model('imagenet')
@@ -51,6 +51,7 @@ for x, y in IID_test_loader:
 	pred = model(x)
 	total += y.size(0)
 	correct += (pred.argmax(1) == y.to(device)).sum()
+	x = x.to('cpu')
 print(f'IID accuracy: {100 * float(correct) / total}%')
 correct = 0
 total = 0
@@ -59,6 +60,7 @@ for x, y in OOD_test_loader:
 	pred = model(x)
 	total += y.size(0)
 	correct += (pred.argmax(1) == y.to(device)).sum()
+	x = x.to('cpu')
 print(f'OOD accuracy: {100 * float(correct) / total}%')
 
 # ~ torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}.pt')
