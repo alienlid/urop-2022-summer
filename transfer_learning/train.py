@@ -16,7 +16,7 @@ epochs = 30
 learning_rate = 1e-3
 loss = nn.CrossEntropyLoss()
 
-severity = 1
+severity = 2
 shortcut = int(os.getenv("SLURM_ARRAY_TASK_ID"))
 
 model = get_model('imagenet')
