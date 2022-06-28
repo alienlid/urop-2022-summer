@@ -19,7 +19,7 @@ loss = nn.CrossEntropyLoss()
 severity = 0
 shortcut = int(os.getenv("SLURM_ARRAY_TASK_ID"))
 
-model = get_model('imagenet')
+model = get_model('imagenet', False)
 model = model.to(device)
 # ~ not_fc = [param for name, param in model.named_parameters() if name not in ["fc.weight", "fc.bias"]]
 # ~ optimizer = torch.optim.SGD([{'params': not_fc}, {'params': model.fc.parameters(), 'lr': learning_rate * 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)

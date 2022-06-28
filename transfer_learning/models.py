@@ -99,22 +99,29 @@ class ResNet(nn.Module):
     out = self.linear(out)
     return out
 
-def get_model(pretrained):
-  if pretrained == 'random_init':
-    return ResNet(BasicBlock, [2, 2, 2, 2])
-  elif pretrained == 'imagenet':
-    model = torchvision.models.resnet18(pretrained = True)
-    model.fc = nn.Linear(512, 10)
-    return model
-  elif pretrained == 'imagenet-21k':
-    model = torchvision.models.resnet50()
-    state = torch.load('pretrained-models/resnet50_miil_21k.pth')
-    for key in model.state_dict():
-    	if 'num_batches_tracked' in key:
-    		continue
-    	p = model
-    	ip = state['state_dict'][key]
-    	if p.shape == ip.shape:
-    		p.data.copy_(ip.data)
-    model.eval()
-    return model
+def get_model(pretrained, full_network = True):
+	if pretrained == 'random_init':
+		return ResNet(BasicBlock, [2, 2, 2, 2])
+	elif pretrained == 'imagenet':
+		model = torchvision.models.resnet18(pretrained = True)
+		if not full_network:
+			for param in model.parameters():
+				param.requires_grad = False
+		model.fc = nn.Linear(512, 10)
+		return model
+	elif pretrained == 'imagenet-21k':
+		model = torchvision.models.resnet50()
+		state = torch.load('pretrained-models/resnet50_miil_21k.pth')
+		for key in model.state_dict():
+			if 'num_batches_tracked' in key:
+				continue
+			p = model
+			ip = state['state_dict'][key]
+			if p.shape == ip.shape:
+				p.data.copy_(ip.data)
+		if not full_network:
+			for param in model.parameters():
+				param.requires_grad = False
+		model.fc = nn.Linear(512, 10)
+		model.eval()
+		return model
