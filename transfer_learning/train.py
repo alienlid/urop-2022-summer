@@ -13,16 +13,17 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
 
 epochs = 30
-learning_rate = 1e-3
+learning_rate = 1e-2
 loss = nn.CrossEntropyLoss()
 
-severity = 5
+severity = 0
 shortcut = int(os.getenv("SLURM_ARRAY_TASK_ID"))
 
 model = get_model('imagenet')
 model = model.to(device)
-not_fc = [param for name, param in model.named_parameters() if name not in ["fc.weight", "fc.bias"]]
-optimizer = torch.optim.SGD([{'params': not_fc}, {'params': model.fc.parameters(), 'lr': learning_rate * 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
+# ~ not_fc = [param for name, param in model.named_parameters() if name not in ["fc.weight", "fc.bias"]]
+# ~ optimizer = torch.optim.SGD([{'params': not_fc}, {'params': model.fc.parameters(), 'lr': learning_rate * 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
+optimizer = torch.optim.SGD(params = model.fc.parameters(), lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
 scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 15000)
 train_dataset = CIFAR10CS('data', True, 'gaussian_blur', severity, shortcut, transform_test_finetune)
 train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 128, shuffle = True)
