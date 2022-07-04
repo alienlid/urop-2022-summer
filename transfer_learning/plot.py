@@ -1,14 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
-# ~ IID = [
-	# ~ [0.9598, 0.9550, 0.9533, 0.9488, 0.9389],
-	# ~ [0.9695, 0.9637, 0.9624, 0.9561, 0.9475],
-	# ~ [0.9745, 0.9726, 0.9676, 0.9653, 0.9624],
-	# ~ [0.9846, 0.9828, 0.9822, 0.9767, 0.9734],
-	# ~ ]
 	
-IID = [
+IID_FN = [
 	[0.9589, 0.9580, 0.9553, 0.9511, 0.9472, 0.9390],
 	[0.9623, 0.9618, 0.9590, 0.9557, 0.9521, 0.9399],
 	[0.9636, 0.9644, 0.9581, 0.9569, 0.9537, 0.9423],
@@ -24,7 +17,7 @@ IID = [
 	[0.9854, 0.9843, 0.9829, 0.9821, 0.9820, 0.9758]
 	]
 	
-OOD = [
+OOD_FN = [
 	[0.9600, 0.9598, 0.9304, 0.8996, 0.8719, 0.8238],
 	[0.9634, 0.9622, 0.9405, 0.9045, 0.8812, 0.7953],
 	[0.9642, 0.9637, 0.9448, 0.9112, 0.8892, 0.8276],
@@ -39,37 +32,69 @@ OOD = [
 	[0.9812, 0.9836, 0.9754, 0.9638, 0.9653, 0.9381],
 	[0.9854, 0.9834, 0.9792, 0.9731, 0.9631, 0.9570]
 	]
+	
+IID_LL = [
+	[0.7913, 0.7881, 0.7467, 0.7265, 0.6995, 0.6561],
+	[0.7876, 0.7813, 0.7524, 0.7292, 0.7055, 0.6638],
+	[0.7938, 0.7848, 0.7518, 0.7262, 0.7058, 0.6662],
+	[0.7897, 0.7884, 0.7600, 0.7291, 0.7116, 0.6658],
+	[0.7966, 0.7904, 0.7527, 0.7341, 0.7045, 0.6697],
+	[0.7992, 0.7952, 0.7566, 0.7421, 0.7166, 0.6919],
+	[0.8024, 0.7872, 0.7577, 0.7374, 0.7238, 0.6957],
+	[0.8083, 0.7969, 0.7611, 0.7558, 0.7321, 0.7132],
+	[0.8092, 0.8085, 0.7656, 0.7584, 0.7431, 0.6993],
+	[0.8020, 0.8021, 0.7776, 0.7583, 0.7527, 0.7036],
+	[0.8164, 0.8116, 0.7802, 0.7551, 0.7510, 0.7058],
+	[0.8094, 0.8040, 0.7942, 0.7690, 0.7576, 0.7181],
+	[0.8140, 0.8168, 0.7940, 0.7752, 0.7591, 0.7160]
+	]
+	
+OOD_LL = [
+	[0.7918, 0.7893, 0.7016, 0.6419, 0.5996, 0.5136],
+	[0.7874, 0.7851, 0.7066, 0.6518, 0.5998, 0.5147],
+	[0.7919, 0.7881, 0.7031, 0.6375, 0.5952, 0.5016],
+	[0.7903, 0.7910, 0.7138, 0.6466, 0.6207, 0.5088],
+	[0.7964, 0.7934, 0.7052, 0.6567, 0.5880, 0.5295],
+	[0.7989, 0.7954, 0.6984, 0.6474, 0.5963, 0.5170],
+	[0.7998, 0.7875, 0.7135, 0.6582, 0.6301, 0.5388],
+	[0.8048, 0.7995, 0.7271, 0.6685, 0.5915, 0.5162],
+	[0.8090, 0.8107, 0.7372, 0.6786, 0.6092, 0.5200],
+	[0.8079, 0.8015, 0.7257, 0.6682, 0.6380, 0.5074],
+	[0.8159, 0.8150, 0.7406, 0.6992, 0.6632, 0.5454],
+	[0.8139, 0.8083, 0.7356, 0.6715, 0.6410, 0.5729],
+	[0.8149, 0.8183, 0.7439, 0.6822, 0.6401, 0.5287]
+	]
 
 x = np.array(range(6))
 
-# ~ plt.plot(x, IID[0], label = '20% shortcut')
-# ~ plt.plot(x, IID[1], label = '25% shortcut')
-# ~ plt.plot(x, IID[2], label = '30% shortcut')
-# ~ plt.plot(x, IID[3], label = '35% shortcut')
-# ~ plt.plot(x, IID[4], label = '40% shortcut')
-# ~ plt.plot(x, IID[5], label = '45% shortcut')
-# ~ plt.plot(x, IID[6], label = '50% shortcut')
-# ~ plt.plot(x, IID[7], label = '55% shortcut')
-# ~ plt.plot(x, IID[8], label = '60% shortcut')
-# ~ plt.plot(x, IID[9], label = '65% shortcut')
-# ~ plt.plot(x, IID[10], label = '70% shortcut')
-# ~ plt.plot(x, IID[11], label = '75% shortcut')
-# ~ plt.plot(x, IID[12], label = '80% shortcut')
-plt.plot(x, OOD[0], label = '20% shortcut')
-plt.plot(x, OOD[1], label = '25% shortcut')
-plt.plot(x, OOD[2], label = '30% shortcut')
-plt.plot(x, OOD[3], label = '35% shortcut')
-plt.plot(x, OOD[4], label = '40% shortcut')
-plt.plot(x, OOD[5], label = '45% shortcut')
-plt.plot(x, OOD[6], label = '50% shortcut')
-plt.plot(x, OOD[7], label = '55% shortcut')
-plt.plot(x, OOD[8], label = '60% shortcut')
-plt.plot(x, OOD[9], label = '65% shortcut')
-plt.plot(x, OOD[10], label = '70% shortcut')
-plt.plot(x, OOD[11], label = '75% shortcut')
-plt.plot(x, OOD[12], label = '80% shortcut')
+plt.plot(x, IID_LL[0], label = '20% shortcut, last-layer')
+# ~ plt.plot(x, OOD_LL[1], label = '25% shortcut')
+# ~ plt.plot(x, OOD_LL[2], label = '30% shortcut')
+# ~ plt.plot(x, OOD_LL[3], label = '35% shortcut')
+plt.plot(x, IID_LL[4], label = '40% shortcut, last-layer')
+# ~ plt.plot(x, OOD_LL[5], label = '45% shortcut')
+# ~ plt.plot(x, OOD_LL[6], label = '50% shortcut')
+# ~ plt.plot(x, OOD_LL[7], label = '55% shortcut')
+plt.plot(x, IID_LL[8], label = '60% shortcut, last-layer')
+# ~ plt.plot(x, OOD_LL[9], label = '65% shortcut')
+# ~ plt.plot(x, OOD_LL[10], label = '70% shortcut')
+# ~ plt.plot(x, OOD_LL[11], label = '75% shortcut')
+plt.plot(x, IID_LL[12], label = '80% shortcut, last-layer')
+plt.plot(x, IID_FN[0], label = '20% shortcut, full-network')
+# ~ plt.plot(x, OOD_FN[1], label = '25% shortcut')
+# ~ plt.plot(x, OOD_FN[2], label = '30% shortcut')
+# ~ plt.plot(x, OOD_FN[3], label = '35% shortcut')
+plt.plot(x, IID_FN[4], label = '40% shortcut, full-network')
+# ~ plt.plot(x, OOD_FN[5], label = '45% shortcut')
+# ~ plt.plot(x, OOD_FN[6], label = '50% shortcut')
+# ~ plt.plot(x, OOD_FN[7], label = '55% shortcut')
+plt.plot(x, IID_FN[8], label = '60% shortcut, full-network')
+# ~ plt.plot(x, OOD_FN[9], label = '65% shortcut')
+# ~ plt.plot(x, OOD_FN[10], label = '70% shortcut')
+# ~ plt.plot(x, OOD_FN[11], label = '75% shortcut')
+plt.plot(x, IID_FN[12], label = '80% shortcut, full-network')
 plt.xticks(x)
 plt.xlabel('Severity')
-plt.ylabel('OOD accuracy')
+plt.ylabel('IID accuracy')
 plt.legend()
 plt.show()
