@@ -22,10 +22,12 @@ no_sc_loader = torch.utils.data.DataLoader(dataset = no_sc_dataset, batch_size =
 full_sc_dataset = CIFAR10CS('data', False, 'gaussian_blur', 0, 100, transform_test_finetune)
 full_sc_loader = torch.utils.data.DataLoader(dataset = full_sc_dataset, batch_size = 128)
 
-model_fn = torchvision.models.resnet18().to(device)
+model_fn = torchvision.models.resnet18()
 model_fn.fc = nn.Linear(512, 10)
-model_ll = torchvision.models.resnet18().to(device)
+model_fn.to(device)
+model_ll = torchvision.models.resnet18()
 model_ll.fc = nn.Linear(512, 10)
+model_ll.to(device)
 
 fn = np.zeros([5, 21])
 ll = np.zeros([5, 21])
