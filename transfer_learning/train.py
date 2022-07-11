@@ -24,7 +24,7 @@ model = model.to(device)
 not_fc = [param for name, param in model.named_parameters() if name not in ["fc.weight", "fc.bias"]]
 optimizer = torch.optim.SGD([{'params': model.fc.parameters()}, {'params': not_fc, 'lr': learning_rate / 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
 # ~ optimizer = torch.optim.SGD(params = model.fc.parameters(), lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
-scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e2, total_steps = 15000)
+scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 15000)
 train_dataset = CIFAR10CS('data', True, 'gaussian_blur', severity, shortcut, transform_test_finetune)
 train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 128, shuffle = True)
 OOD_test_dataset = datasets.CIFAR10(root = 'data', train = False, download = True, transform = transform_test_finetune)
@@ -64,4 +64,4 @@ for x, y in OOD_test_loader:
 	x = x.to('cpu')
 print(f'OOD accuracy: {100 * float(correct) / total}%')
 
-torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}-ll.pt')
+torch.save(model.state_dict(), f'gaussian_blur/{shortcut}-{severity}-fn.pt')
