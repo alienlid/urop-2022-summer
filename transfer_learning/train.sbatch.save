@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --gres=gpu:2080_ti:1
+#SBATCH --output=/mnt/nfs/home/ddl/urop/transfer_learning/gaussian_blur/%a-5-ll.out
+#SBATCH --array=20,25,30,35,40,45,50,55,60,65,70,75,80
+
+# array 0-10%4
+# $SLURM_TASK_ARRAY_ID
+srun python3 train.py
