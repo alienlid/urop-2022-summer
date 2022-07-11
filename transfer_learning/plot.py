@@ -22,9 +22,9 @@ no_sc_loader = torch.utils.data.DataLoader(dataset = no_sc_dataset, batch_size =
 full_sc_dataset = CIFAR10CS('data', False, 'gaussian_blur', 0, 100, transform_test_finetune)
 full_sc_loader = torch.utils.data.DataLoader(dataset = full_sc_dataset, batch_size = 128)
 
-model_fn = torchvision.models.resnet18()
+model_fn = torchvision.models.resnet18().to(device)
 model_fn.fc = nn.Linear(512, 10)
-model_ll = torchvision.models.resnet18()
+model_ll = torchvision.models.resnet18().to(device)
 model_ll.fc = nn.Linear(512, 10)
 
 fn = np.zeros([5, 21])
@@ -33,7 +33,9 @@ ll = np.zeros([5, 21])
 for severity in range(1, 6):
 	for shortcut in range(0, 105, 5):
 		model_fn.load_state_dict(torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt'))
+		model_fn.eval()
 		model_ll.load_state_dict(torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt'))
+		model_ll.eval()
 		correct_fn = 0
 		correct_ll = 0
 		total = 0
