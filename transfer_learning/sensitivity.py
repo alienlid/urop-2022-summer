@@ -13,8 +13,6 @@ print(device)
 severity = int(os.getenv("SLURM_ARRAY_TASK_ID")) % 5 + 1
 shortcut = 5 * (int(os.getenv("SLURM_ARRAY_TASK_ID")) % 21)
 
-print(f'Shortcut: {shortcut}, Severity: {severity}')
-
 no_sc_dataset = datasets.CIFAR10(root = 'data', train = False, download = True, transform = transform_test_finetune)
 no_sc_loader = torch.utils.data.DataLoader(dataset = no_sc_dataset, batch_size = 128)
 full_sc_dataset = CIFAR10CS('data', False, 'gaussian_blur', 0, 100, transform_test_finetune)
@@ -46,8 +44,8 @@ for x, y in full_sc_loader:
 	correct_fn += (pred_fn.argmax(1) == y.to(device)).sum()
 	correct_ll += (pred_ll.argmax(1) == y.to(device)).sum()
 	x = x.to('cpu')
-fn += correct_fn / total
-ll += correct_ll / total
+fsfn = correct_fn / total
+fsll = correct_ll / total
 correct_fn = 0
 correct_ll = 0
 total = 0
@@ -59,10 +57,12 @@ for x, y in no_sc_loader:
 	correct_fn += (pred_fn.argmax(1) == y.to(device)).sum()
 	correct_ll += (pred_ll.argmax(1) == y.to(device)).sum()
 	x = x.to('cpu')
-fn -= correct_fn / total
-ll -= correct_ll / total
-print(f'full-network: {fn}')
-print(f'last-layer: {ll}')
+nsfn = correct_fn / total
+nsll = correct_ll / total
+print(f'Shortcut: {shortcut}, Severity: {severity}')
+print(f'full-network: {fsfn}, {nsfn}; last-layer: {fsll}, {nsll}')
+print(fsfn - nsfn)
+print(fsll - nsll)
 		
 # ~ x = np.array(range(0, 105, 5))
 
