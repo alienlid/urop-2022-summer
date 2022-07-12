@@ -61,8 +61,8 @@ nsfn = correct_fn / total
 nsll = correct_ll / total
 print(f'Shortcut: {shortcut}, Severity: {severity}')
 print(f'full-network: {fsfn}, {nsfn}; last-layer: {fsll}, {nsll}')
-print(fsfn - nsfn)
-print(fsll - nsll)
+print(float(fsfn - nsfn))
+print(float(fsll - nsll))
 		
 # ~ x = np.array(range(0, 105, 5))
 

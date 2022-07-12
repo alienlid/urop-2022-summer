@@ -10,7 +10,7 @@ import torchvision.datasets as datasets
 
 shortcuts = []
 for i in range(10):
-	shortcuts.append(np.random.randint(0, 256, (3, 3, 3)))
+	shortcuts.append(np.load(f'shortcut{i}.npy'))
 		
 class CIFAR10CS(datasets.VisionDataset):
 	def __init__(self, root, train, corruption, severity, shortcut, transform):
