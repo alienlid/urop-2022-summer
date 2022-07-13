@@ -1,0 +1,735 @@
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 1
+full-network: 0.9513999819755554, 0.9519000053405762; last-layer: 0.7788999676704407, 0.7840999960899353
+-0.000500023365020752
+-0.005200028419494629
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 2
+full-network: 0.9641000032424927, 0.9200999736785889; last-layer: 0.7181000113487244, 0.7076999545097351
+0.04400002956390381
+0.010400056838989258
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 1
+full-network: 0.9996999502182007, 0.9440999627113342; last-layer: 0.8260999917984009, 0.7730000019073486
+0.055599987506866455
+0.053099989891052246
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 1
+full-network: 0.9998999834060669, 0.9238999485969543; last-layer: 0.828499972820282, 0.755899965763092
+0.07600003480911255
+0.07260000705718994
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 2
+full-network: 0.9980999827384949, 0.8841999769210815; last-layer: 0.7538999915122986, 0.659500002861023
+0.11390000581741333
+0.09439998865127563
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 3
+full-network: 0.9993999600410461, 0.8544999957084656; last-layer: 0.6970999836921692, 0.6032999753952026
+0.14489996433258057
+0.09380000829696655
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 4
+full-network: 0.9990999698638916, 0.7393999695777893; last-layer: 0.6444999575614929, 0.5455999970436096
+0.2597000002861023
+0.0988999605178833
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 5
+full-network: 0.998199999332428, 0.1404999941587448; last-layer: 0.5370999574661255, 0.4348999857902527
+0.857699990272522
+0.1021999716758728
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 2
+full-network: 0.996999979019165, 0.910099983215332; last-layer: 0.7498999834060669, 0.6819999814033508
+0.08689999580383301
+0.06790000200271606
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 3
+full-network: 0.9980999827384949, 0.8695999979972839; last-layer: 0.6912999749183655, 0.6168999671936035
+0.12849998474121094
+0.07440000772476196
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 4
+full-network: 0.9979999661445618, 0.8193999528884888; last-layer: 0.6401999592781067, 0.5609999895095825
+0.178600013256073
+0.07919996976852417
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 5
+full-network: 0.996399998664856, 0.8109999895095825; last-layer: 0.5347999930381775, 0.4575999975204468
+0.18540000915527344
+0.07719999551773071
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 1
+full-network: 0.9995999932289124, 0.9281999468803406; last-layer: 0.8242999911308289, 0.7516999840736389
+0.07140004634857178
+0.07260000705718994
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 2
+full-network: 0.9987999796867371, 0.885699987411499; last-layer: 0.7594000101089478, 0.6678000092506409
+0.11309999227523804
+0.09160000085830688
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 3
+full-network: 0.9985999464988708, 0.8557999730110168; last-layer: 0.687999963760376, 0.5997999906539917
+0.142799973487854
+0.08819997310638428
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 4
+full-network: 0.9990999698638916, 0.808899998664856; last-layer: 0.6322000026702881, 0.5411999821662903
+0.19019997119903564
+0.0910000205039978
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 5
+full-network: 0.9994999766349792, 0.7845999598503113; last-layer: 0.542199969291687, 0.44419997930526733
+0.21490001678466797
+0.09799998998641968
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 3
+full-network: 0.986799955368042, 0.8894999623298645; last-layer: 0.6628999710083008, 0.6421999931335449
+0.09729999303817749
+0.02069997787475586
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 1
+full-network: 0.9993999600410461, 0.27079999446868896; last-layer: 0.8316999673843384, 0.7315999865531921
+0.7285999655723572
+0.10009998083114624
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 2
+full-network: 0.9314999580383301, 0.9314999580383301; last-layer: 0.7033999562263489, 0.7037000060081482
+0.0
+-0.0003000497817993164
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 3
+full-network: 0.9508999586105347, 0.8940999507904053; last-layer: 0.6615999937057495, 0.6478999853134155
+0.056800007820129395
+0.013700008392333984
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 4
+full-network: 0.9612999558448792, 0.8406999707221985; last-layer: 0.6158999800682068, 0.5920000076293945
+0.12059998512268066
+0.023899972438812256
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 5
+full-network: 0.9404999613761902, 0.7443000078201294; last-layer: 0.5309000015258789, 0.5
+0.1961999535560608
+0.030900001525878906
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 1
+full-network: 0.9983999729156494, 0.9495999813079834; last-layer: 0.8064999580383301, 0.7784000039100647
+0.048799991607666016
+0.02809995412826538
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 2
+full-network: 0.9970999956130981, 0.9194999933242798; last-layer: 0.741599977016449, 0.701200008392334
+0.07760000228881836
+0.04039996862411499
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 3
+full-network: 0.9950999617576599, 0.8902999758720398; last-layer: 0.6578999757766724, 0.6146999597549438
+0.10479998588562012
+0.043200016021728516
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 4
+full-network: 0.9922999739646912, 0.8235999941825867; last-layer: 0.6441999673843384, 0.5881999731063843
+0.1686999797821045
+0.0559999942779541
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 5
+full-network: 0.9686999917030334, 0.7336999773979187; last-layer: 0.5527999997138977, 0.4901999831199646
+0.23500001430511475
+0.0626000165939331
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 4
+full-network: 0.9747999906539917, 0.8423999547958374; last-layer: 0.6155999898910522, 0.5841000080108643
+0.1324000358581543
+0.03149998188018799
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 1
+full-network: 0.9998999834060669, 0.9449999928474426; last-layer: 0.8211999535560608, 0.7676999568939209
+0.05489999055862427
+0.05349999666213989
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 2
+full-network: 0.9989999532699585, 0.9144999980926514; last-layer: 0.7594000101089478, 0.6929999589920044
+0.08449995517730713
+0.06640005111694336
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 3
+full-network: 0.9980999827384949, 0.887999951839447; last-layer: 0.6940999627113342, 0.627299964427948
+0.11010003089904785
+0.06679999828338623
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 4
+full-network: 0.9958999752998352, 0.8226000070571899; last-layer: 0.6340999603271484, 0.5600999593734741
+0.17329996824264526
+0.07400000095367432
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 5
+full-network: 0.993399977684021, 0.7764999866485596; last-layer: 0.5320000052452087, 0.45969998836517334
+0.21689999103546143
+0.0723000168800354
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 1
+full-network: 0.9997999668121338, 0.9314000010490417; last-layer: 0.8260999917984009, 0.7583999633789062
+0.06839996576309204
+0.06770002841949463
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 2
+full-network: 0.9993999600410461, 0.8964999914169312; last-layer: 0.7601000070571899, 0.6746999621391296
+0.10289996862411499
+0.0854000449180603
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 3
+full-network: 0.9979999661445618, 0.870199978351593; last-layer: 0.7045999765396118, 0.6125999689102173
+0.12779998779296875
+0.09200000762939453
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 4
+full-network: 0.9994999766349792, 0.8531000018119812; last-layer: 0.635699987411499, 0.5478000044822693
+0.14639997482299805
+0.08789998292922974
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 5
+full-network: 0.9971999526023865, 0.7249999642372131; last-layer: 0.5450999736785889, 0.4495999813079834
+0.27219998836517334
+0.09549999237060547
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 5
+full-network: 0.9753999710083008, 0.7798999547958374; last-layer: 0.5166000127792358, 0.48079997301101685
+0.19550001621246338
+0.035800039768218994
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 1
+full-network: 0.9997999668121338, 0.8881999850273132; last-layer: 0.8328999876976013, 0.7366999983787537
+0.11159998178482056
+0.09619998931884766
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 2
+full-network: 0.9993000030517578, 0.2928999960422516; last-layer: 0.7660999894142151, 0.6503999829292297
+0.7064000368118286
+0.11570000648498535
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 3
+full-network: 0.8869999647140503, 0.8851999640464783; last-layer: 0.6446999907493591, 0.6444999575614929
+0.0018000006675720215
+0.00020003318786621094
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 4
+full-network: 0.9314000010490417, 0.8465999960899353; last-layer: 0.5981999635696411, 0.5835999846458435
+0.08480000495910645
+0.014599978923797607
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 5
+full-network: 0.9601999521255493, 0.7793999910354614; last-layer: 0.526199996471405, 0.5041999816894531
+0.1807999610900879
+0.022000014781951904
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 1
+full-network: 0.9965999722480774, 0.95169997215271; last-layer: 0.7998999953269958, 0.7809999585151672
+0.04490000009536743
+0.018900036811828613
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 2
+full-network: 0.9930999875068665, 0.92249995470047; last-layer: 0.7202999591827393, 0.686199963092804
+0.07060003280639648
+0.0340999960899353
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 3
+full-network: 0.9921999573707581, 0.875499963760376; last-layer: 0.6725999712944031, 0.6322999596595764
+0.11669999361038208
+0.04030001163482666
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 4
+full-network: 0.9876999855041504, 0.8382999897003174; last-layer: 0.6211999654769897, 0.5670999884605408
+0.149399995803833
+0.054099977016448975
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 5
+full-network: 0.9731999635696411, 0.7353000044822693; last-layer: 0.5331000089645386, 0.48249998688697815
+0.23789995908737183
+0.050600022077560425
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 1
+full-network: 0.9973999857902527, 0.946399986743927; last-layer: 0.8118000030517578, 0.778499960899353
+0.050999999046325684
+0.033300042152404785
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 1
+full-network: 0.9984999895095825, 0.9430999755859375; last-layer: 0.8192999958992004, 0.7706999778747559
+0.05540001392364502
+0.04860001802444458
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 2
+full-network: 0.9987999796867371, 0.917199969291687; last-layer: 0.7448999881744385, 0.6865999698638916
+0.08160001039505005
+0.058300018310546875
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 3
+full-network: 0.9957000017166138, 0.8775999546051025; last-layer: 0.7002999782562256, 0.6392999887466431
+0.11810004711151123
+0.06099998950958252
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 4
+full-network: 0.9921999573707581, 0.8325999975204468; last-layer: 0.6345999836921692, 0.5640000104904175
+0.15959995985031128
+0.07059997320175171
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 5
+full-network: 0.9883999824523926, 0.7493999600410461; last-layer: 0.5533999800682068, 0.47909998893737793
+0.23900002241134644
+0.07429999113082886
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 1
+full-network: 0.9994999766349792, 0.9361000061035156; last-layer: 0.8288999795913696, 0.7595999836921692
+0.06339997053146362
+0.06929999589920044
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 2
+full-network: 0.996999979019165, 0.8962000012397766; last-layer: 0.7412999868392944, 0.663100004196167
+0.10079997777938843
+0.07819998264312744
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 3
+full-network: 0.9993000030517578, 0.8671999573707581; last-layer: 0.6787999868392944, 0.6001999974250793
+0.13210004568099976
+0.07859998941421509
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 4
+full-network: 0.9982999563217163, 0.8152999877929688; last-layer: 0.6326000094413757, 0.5490999817848206
+0.18299996852874756
+0.08350002765655518
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 5
+full-network: 0.9959999918937683, 0.7638999819755554; last-layer: 0.5321999788284302, 0.44599997997283936
+0.2321000099182129
+0.08619999885559082
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 2
+full-network: 0.998199999332428, 0.9167999625205994; last-layer: 0.7428999543190002, 0.7005000114440918
+0.08140003681182861
+0.04239994287490845
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 1
+full-network: 0.9996999502182007, 0.8973000049591064; last-layer: 0.8280999660491943, 0.7457000017166138
+0.10239994525909424
+0.08239996433258057
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 2
+full-network: 0.9995999932289124, 0.8263999819755554; last-layer: 0.761199951171875, 0.656499981880188
+0.17320001125335693
+0.10469996929168701
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 3
+full-network: 0.9990999698638916, 0.22749999165534973; last-layer: 0.7062999606132507, 0.5978999733924866
+0.7716000080108643
+0.10839998722076416
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 4
+full-network: 0.8467999696731567, 0.8471999764442444; last-layer: 0.6050999760627747, 0.6074000000953674
+-0.0004000067710876465
+-0.0023000240325927734
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 5
+full-network: 0.8881999850273132, 0.7470999956130981; last-layer: 0.5149999856948853, 0.5013999938964844
+0.1410999894142151
+0.013599991798400879
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 1
+full-network: 0.9912999868392944, 0.9514999985694885; last-layer: 0.7961999773979187, 0.7806999683380127
+0.03979998826980591
+0.015500009059906006
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 2
+full-network: 0.9918999671936035, 0.9185000061988831; last-layer: 0.7324999570846558, 0.705299973487854
+0.07339996099472046
+0.027199983596801758
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 3
+full-network: 0.9919999837875366, 0.8794999718666077; last-layer: 0.6854999661445618, 0.6473999619483948
+0.11250001192092896
+0.03810000419616699
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 4
+full-network: 0.9851999878883362, 0.8430999517440796; last-layer: 0.6401000022888184, 0.5976999998092651
+0.1421000361442566
+0.04240000247955322
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 5
+full-network: 0.9741999506950378, 0.7639999985694885; last-layer: 0.5338000059127808, 0.48409998416900635
+0.21019995212554932
+0.049700021743774414
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 3
+full-network: 0.9962999820709229, 0.8842999935150146; last-layer: 0.6819999814033508, 0.6326000094413757
+0.1119999885559082
+0.0493999719619751
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 1
+full-network: 0.9989999532699585, 0.9462999701499939; last-layer: 0.8168999552726746, 0.7774999737739563
+0.0526999831199646
+0.03939998149871826
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 2
+full-network: 0.9980999827384949, 0.917199969291687; last-layer: 0.7457999587059021, 0.6940999627113342
+0.08090001344680786
+0.05169999599456787
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 3
+full-network: 0.9977999925613403, 0.8876000046730042; last-layer: 0.6911999583244324, 0.6304999589920044
+0.11019998788833618
+0.06069999933242798
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 4
+full-network: 0.9958999752998352, 0.8568999767303467; last-layer: 0.6215999722480774, 0.5572999715805054
+0.13899999856948853
+0.06430000066757202
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 5
+full-network: 0.9934999942779541, 0.800599992275238; last-layer: 0.5453999638557434, 0.4755999743938446
+0.19290000200271606
+0.0697999894618988
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 1
+full-network: 0.9995999932289124, 0.9406999945640564; last-layer: 0.8237999677658081, 0.758899986743927
+0.05889999866485596
+0.0648999810218811
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 2
+full-network: 0.9989999532699585, 0.901699960231781; last-layer: 0.7518999576568604, 0.676800012588501
+0.09729999303817749
+0.07509994506835938
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 3
+full-network: 0.9990999698638916, 0.8578000068664551; last-layer: 0.6798999905586243, 0.6025999784469604
+0.14129996299743652
+0.07730001211166382
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 4
+full-network: 0.9979999661445618, 0.8309999704360962; last-layer: 0.6412999629974365, 0.5561999678611755
+0.16699999570846558
+0.08509999513626099
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 5
+full-network: 0.9975000023841858, 0.8021999597549438; last-layer: 0.5429999828338623, 0.4553000032901764
+0.19530004262924194
+0.08769997954368591
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 4
+full-network: 0.9868999719619751, 0.8353999853134155; last-layer: 0.6313999891281128, 0.5730000138282776
+0.15149998664855957
+0.058399975299835205
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 1
+full-network: 0.9994999766349792, 0.9170999526977539; last-layer: 0.8314999938011169, 0.7526999711990356
+0.08240002393722534
+0.0788000226020813
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 2
+full-network: 0.9994999766349792, 0.8646999597549438; last-layer: 0.7569999694824219, 0.6559000015258789
+0.1348000168800354
+0.10109996795654297
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 3
+full-network: 0.9994999766349792, 0.8065999746322632; last-layer: 0.6818000078201294, 0.5842999815940857
+0.19290000200271606
+0.0975000262260437
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 4
+full-network: 0.9985999464988708, 0.24089999496936798; last-layer: 0.6399999856948853, 0.5388999581336975
+0.7576999664306641
+0.10110002756118774
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 5
+full-network: 0.7687000036239624, 0.7735999822616577; last-layer: 0.5008999705314636, 0.5004000067710876
+-0.0048999786376953125
+0.0004999637603759766
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 1
+full-network: 0.9716999530792236, 0.9523999691009521; last-layer: 0.7908999919891357, 0.785099983215332
+0.019299983978271484
+0.005800008773803711
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 2
+full-network: 0.9863999485969543, 0.9258999824523926; last-layer: 0.7214999794960022, 0.7023999691009521
+0.06049996614456177
+0.01910001039505005
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 3
+full-network: 0.9899999499320984, 0.9002999663352966; last-layer: 0.6679999828338623, 0.6383999586105347
+0.08969998359680176
+0.029600024223327637
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 4
+full-network: 0.9884999990463257, 0.8598999977111816; last-layer: 0.6114000082015991, 0.5755000114440918
+0.12860000133514404
+0.035899996757507324
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 5
+full-network: 0.9735999703407288, 0.7536999583244324; last-layer: 0.5306999683380127, 0.4900999963283539
+0.2199000120162964
+0.040599972009658813
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 5
+full-network: 0.9836999773979187, 0.7709999680519104; last-layer: 0.5550000071525574, 0.4885999858379364
+0.2127000093460083
+0.06640002131462097
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 1
+full-network: 0.9991999864578247, 0.9465999603271484; last-layer: 0.8136999607086182, 0.7787999510765076
+0.05260002613067627
+0.034900009632110596
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 2
+full-network: 0.9975000023841858, 0.9203999638557434; last-layer: 0.7405999898910522, 0.6908999681472778
+0.07710003852844238
+0.049700021743774414
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 3
+full-network: 0.9979999661445618, 0.8851999640464783; last-layer: 0.6938999891281128, 0.6380000114440918
+0.1128000020980835
+0.055899977684020996
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 4
+full-network: 0.9942999482154846, 0.8633999824523926; last-layer: 0.6552000045776367, 0.5875999927520752
+0.13089996576309204
+0.06760001182556152
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 5
+full-network: 0.9943999648094177, 0.7945999503135681; last-layer: 0.5335000157356262, 0.46959999203681946
+0.1998000144958496
+0.06390002369880676
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 1
+full-network: 0.9994999766349792, 0.9391999840736389; last-layer: 0.8259999752044678, 0.7646999955177307
+0.06029999256134033
+0.06129997968673706
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 2
+full-network: 0.9993000030517578, 0.9108999967575073; last-layer: 0.7392999529838562, 0.6714000105857849
+0.08840000629425049
+0.06789994239807129
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 3
+full-network: 0.9989999532699585, 0.8780999779701233; last-layer: 0.6814999580383301, 0.6090999841690063
+0.1208999752998352
+0.07239997386932373
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 4
+full-network: 0.9989999532699585, 0.8478999733924866; last-layer: 0.6283999681472778, 0.5500999689102173
+0.15109997987747192
+0.07829999923706055
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 5
+full-network: 0.9959999918937683, 0.7994999885559082; last-layer: 0.5533999800682068, 0.4664999842643738
+0.1965000033378601
+0.08689999580383301
