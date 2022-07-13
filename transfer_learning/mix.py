@@ -25,8 +25,8 @@ model.to(device)
 sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
-iid = numpy.zeros(15)
-ood = numpy.zeros(15)
+iid = np.zeros(15)
+ood = np.zeros(15)
 
 for i in range(-2, 13):
 	a = i / 10
@@ -40,7 +40,7 @@ for i in range(-2, 13):
 		x = x.to(device)
 		pred = model(x)
 		total += y.size(0)
-		correct += (pred.argmax(1) == y.to(device)).sum()
+		correct += (pred.to('cpu').argmax(1) == y).sum()
 		x = x.to('cpu')
 	iid[i + 2] = correct / total
 	correct = 0
@@ -49,11 +49,11 @@ for i in range(-2, 13):
 		x = x.to(device)
 		pred = model(x)
 		total += y.size(0)
-		correct += (pred.argmax(1) == y.to(device)).sum()
+		correct += (pred.to('cpu').argmax(1) == y).sum()
 		x = x.to('cpu')
 	ood[i + 2] = correct / total
 	
-plt.plot(iid.to('cpu'), ood.to('cpu'))
+plt.plot(iid, ood)
 plt.xlabel('IID accuracy')
 plt.ylabel('OOD accuracy')
 fig = plt.gcf()
