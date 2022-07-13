@@ -28,7 +28,7 @@ sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 iid = np.zeros(15)
 ood = np.zeros(15)
 
-for i in range(-2, 13):
+for i in range(1):
 	a = i / 10
 	sd = model.state_dict()
 	for key in sd:
@@ -53,6 +53,8 @@ for i in range(-2, 13):
 		x = x.to('cpu')
 	ood[i + 2] = correct / total
 	
+print(iid)
+print(ood)
 plt.plot(iid, ood)
 plt.xlabel('IID accuracy')
 plt.ylabel('OOD accuracy')
