@@ -33,6 +33,7 @@ for i in range(1):
 	sd = model.state_dict()
 	for key in sd:
 		sd[key] = (1 - a) * sd_fn[key] + a * sd_ll[key]
+	model.load_state_dict(sd)
 	model.eval()
 	correct = 0
 	total = 0
