@@ -63,9 +63,3 @@ print(f'Shortcut: {shortcut}, Severity: {severity}')
 print(f'full-network: {fsfn}, {nsfn}; last-layer: {fsll}, {nsll}')
 print(float(fsfn - nsfn))
 print(float(fsll - nsll))
-		
-# ~ x = np.array(range(0, 105, 5))
-
-# ~ for i in range(1, 6):
-	# ~ plt.plot(x, fn[i - 1], label = f'Severity {i}, full-network')
-	# ~ plt.plot(x, ll[i - 1], label = f'Severity {i}, last-layer')
