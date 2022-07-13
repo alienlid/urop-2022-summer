@@ -10,12 +10,12 @@ x = np.array(range(1, 6))
 color = plt.cm.rainbow(np.linspace(0, 1, 21))
 
 for i in range(21):
-	plt.plot(x, ood_fn[i], label = f'{5 * i}% shortcut', c = color[i])
+	plt.plot(x, iid_ll[i], label = f'{5 * i}% shortcut', c = color[i])
 
 plt.xticks(x)
 plt.xlabel('Severity')
-plt.ylabel('OOD accuracy, full-network')
+plt.ylabel('IID accuracy, last-layer')
 plt.legend()
 fig = plt.gcf()
 fig.set_size_inches(14, 10)
-fig.savefig('ood_fn.png', dpi = 200)
+fig.savefig('iid_ll.png', dpi = 200)

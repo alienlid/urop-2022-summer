@@ -1,0 +1,735 @@
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 1
+IID accuracy: 78.24%
+OOD accuracy: 78.41%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 2
+IID accuracy: 74.33%
+OOD accuracy: 70.77%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 1
+IID accuracy: 79.45%
+OOD accuracy: 77.3%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 1
+IID accuracy: 81.62%
+OOD accuracy: 75.59%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 2
+IID accuracy: 79.54%
+OOD accuracy: 65.95%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 3
+IID accuracy: 78.91%
+OOD accuracy: 60.33%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 4
+IID accuracy: 78.37%
+OOD accuracy: 54.56%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 5
+IID accuracy: 78.19%
+OOD accuracy: 43.49%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 2
+IID accuracy: 76.73%
+OOD accuracy: 68.2%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 3
+IID accuracy: 75.53%
+OOD accuracy: 61.69%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 4
+IID accuracy: 74.48%
+OOD accuracy: 56.1%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 5
+IID accuracy: 72.13%
+OOD accuracy: 45.76%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 1
+IID accuracy: 80.87%
+OOD accuracy: 75.17%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 2
+IID accuracy: 78.86%
+OOD accuracy: 66.78%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 3
+IID accuracy: 78.46%
+OOD accuracy: 59.98%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 4
+IID accuracy: 77.43%
+OOD accuracy: 54.12%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 5
+IID accuracy: 76.7%
+OOD accuracy: 44.42%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 3
+IID accuracy: 72.09%
+OOD accuracy: 64.22%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 1
+IID accuracy: 83.86%
+OOD accuracy: 73.16%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 2
+IID accuracy: 74.22%
+OOD accuracy: 70.37%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 3
+IID accuracy: 72.11%
+OOD accuracy: 64.79%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 4
+IID accuracy: 69.6%
+OOD accuracy: 59.2%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 5
+IID accuracy: 65.88%
+OOD accuracy: 50.0%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 1
+IID accuracy: 78.26%
+OOD accuracy: 77.84%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 2
+IID accuracy: 74.54%
+OOD accuracy: 70.12%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 3
+IID accuracy: 72.88%
+OOD accuracy: 61.47%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 4
+IID accuracy: 71.39%
+OOD accuracy: 58.82%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 5
+IID accuracy: 68.19%
+OOD accuracy: 49.02%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 4
+IID accuracy: 69.99%
+OOD accuracy: 58.41%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 1
+IID accuracy: 79.11%
+OOD accuracy: 76.77%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 2
+IID accuracy: 75.88%
+OOD accuracy: 69.3%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 3
+IID accuracy: 75.34%
+OOD accuracy: 62.73%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 4
+IID accuracy: 73.84%
+OOD accuracy: 56.01%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 5
+IID accuracy: 71.57%
+OOD accuracy: 45.97%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 1
+IID accuracy: 80.58%
+OOD accuracy: 75.84%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 2
+IID accuracy: 78.43%
+OOD accuracy: 67.47%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 3
+IID accuracy: 77.64%
+OOD accuracy: 61.26%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 4
+IID accuracy: 77.04%
+OOD accuracy: 54.78%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 5
+IID accuracy: 76.03%
+OOD accuracy: 44.96%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 5
+IID accuracy: 65.83%
+OOD accuracy: 48.08%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 1
+IID accuracy: 83.18%
+OOD accuracy: 73.67%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 2
+IID accuracy: 81.78%
+OOD accuracy: 65.04%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 3
+IID accuracy: 71.66%
+OOD accuracy: 64.45%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 4
+IID accuracy: 69.95%
+OOD accuracy: 58.36%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 5
+IID accuracy: 65.01%
+OOD accuracy: 50.42%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 1
+IID accuracy: 78.24%
+OOD accuracy: 78.1%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 2
+IID accuracy: 74.76%
+OOD accuracy: 68.62%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 3
+IID accuracy: 72.25%
+OOD accuracy: 63.23%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 4
+IID accuracy: 70.71%
+OOD accuracy: 56.71%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 5
+IID accuracy: 67.48%
+OOD accuracy: 48.25%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 1
+IID accuracy: 78.38%
+OOD accuracy: 77.85%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 1
+IID accuracy: 79.03%
+OOD accuracy: 77.07%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 2
+IID accuracy: 75.95%
+OOD accuracy: 68.66%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 3
+IID accuracy: 74.2%
+OOD accuracy: 63.93%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 4
+IID accuracy: 72.83%
+OOD accuracy: 56.4%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 5
+IID accuracy: 70.62%
+OOD accuracy: 47.91%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 1
+IID accuracy: 80.83%
+OOD accuracy: 75.96%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 2
+IID accuracy: 78.04%
+OOD accuracy: 66.31%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 3
+IID accuracy: 77.14%
+OOD accuracy: 60.02%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 4
+IID accuracy: 75.93%
+OOD accuracy: 54.91%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 5
+IID accuracy: 74.62%
+OOD accuracy: 44.6%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 2
+IID accuracy: 74.73%
+OOD accuracy: 70.05%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 1
+IID accuracy: 82.29%
+OOD accuracy: 74.57%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 2
+IID accuracy: 80.96%
+OOD accuracy: 65.65%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 3
+IID accuracy: 80.92%
+OOD accuracy: 59.79%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 4
+IID accuracy: 69.55%
+OOD accuracy: 60.74%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 5
+IID accuracy: 65.25%
+OOD accuracy: 50.14%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 1
+IID accuracy: 77.94%
+OOD accuracy: 78.07%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 2
+IID accuracy: 74.31%
+OOD accuracy: 70.53%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 3
+IID accuracy: 72.62%
+OOD accuracy: 64.74%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 4
+IID accuracy: 70.05%
+OOD accuracy: 59.77%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 5
+IID accuracy: 67.14%
+OOD accuracy: 48.41%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 3
+IID accuracy: 72.81%
+OOD accuracy: 63.26%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 1
+IID accuracy: 78.98%
+OOD accuracy: 77.75%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 2
+IID accuracy: 75.68%
+OOD accuracy: 69.41%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 3
+IID accuracy: 73.9%
+OOD accuracy: 63.05%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 4
+IID accuracy: 72.72%
+OOD accuracy: 55.73%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 5
+IID accuracy: 70.26%
+OOD accuracy: 47.56%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 1
+IID accuracy: 80.18%
+OOD accuracy: 75.89%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 2
+IID accuracy: 77.61%
+OOD accuracy: 67.68%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 3
+IID accuracy: 76.08%
+OOD accuracy: 60.26%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 4
+IID accuracy: 75.49%
+OOD accuracy: 55.62%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 80, Severity: 5
+IID accuracy: 73.88%
+OOD accuracy: 45.53%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 4
+IID accuracy: 71.61%
+OOD accuracy: 57.3%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 85, Severity: 1
+IID accuracy: 81.71%
+OOD accuracy: 75.27%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 90, Severity: 2
+IID accuracy: 80.49%
+OOD accuracy: 65.59%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 95, Severity: 3
+IID accuracy: 79.91%
+OOD accuracy: 58.43%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 100, Severity: 4
+IID accuracy: 79.62%
+OOD accuracy: 53.89%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 0, Severity: 5
+IID accuracy: 64.72%
+OOD accuracy: 50.04%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 5, Severity: 1
+IID accuracy: 78.17%
+OOD accuracy: 78.51%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 10, Severity: 2
+IID accuracy: 74.2%
+OOD accuracy: 70.24%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 15, Severity: 3
+IID accuracy: 72.11%
+OOD accuracy: 63.84%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 20, Severity: 4
+IID accuracy: 69.61%
+OOD accuracy: 57.55%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 25, Severity: 5
+IID accuracy: 66.4%
+OOD accuracy: 49.01%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 5
+IID accuracy: 68.42%
+OOD accuracy: 48.86%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 30, Severity: 1
+IID accuracy: 78.68%
+OOD accuracy: 77.88%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 35, Severity: 2
+IID accuracy: 75.02%
+OOD accuracy: 69.09%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 40, Severity: 3
+IID accuracy: 73.88%
+OOD accuracy: 63.8%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 45, Severity: 4
+IID accuracy: 71.58%
+OOD accuracy: 58.76%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 50, Severity: 5
+IID accuracy: 69.21%
+OOD accuracy: 46.96%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 55, Severity: 1
+IID accuracy: 79.59%
+OOD accuracy: 76.47%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 60, Severity: 2
+IID accuracy: 77.24%
+OOD accuracy: 67.14%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 65, Severity: 3
+IID accuracy: 76.23%
+OOD accuracy: 60.91%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 70, Severity: 4
+IID accuracy: 75.29%
+OOD accuracy: 55.01%
+cuda
+Files already downloaded and verified
+Files already downloaded and verified
+Files already downloaded and verified
+Shortcut: 75, Severity: 5
+IID accuracy: 72.77%
+OOD accuracy: 46.65%

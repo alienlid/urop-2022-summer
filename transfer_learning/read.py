@@ -22,7 +22,7 @@ np.save('gaussian_blur/iid_fn.npy', iid_fn.astype(np.float32))
 np.save('gaussian_blur/ood_fn.npy', ood_fn.astype(np.float32))
 
 f.close()
-"""
+
 f = open('gaussian_blur/last-layer.txt', 'r')
 lines = f.readlines()
 
@@ -40,4 +40,3 @@ np.save('gaussian_blur/iid_ll.npy', iid_ll.astype(np.float32))
 np.save('gaussian_blur/ood_ll.npy', ood_ll.astype(np.float32))
 
 f.close()
-"""
