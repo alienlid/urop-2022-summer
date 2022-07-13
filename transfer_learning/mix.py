@@ -28,7 +28,7 @@ sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 iid = np.zeros(15)
 ood = np.zeros(15)
 
-for i in range(1):
+for i in range(-2, 13):
 	a = i / 10
 	sd = model.state_dict()
 	for key in sd:
