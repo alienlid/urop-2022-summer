@@ -48,10 +48,10 @@ f = open('gaussian_blur/s.txt', 'r')
 lines = f.readlines()
 
 for k in range(105):
-	comma = lines[7 * k + 4].find(',')
-	i = int(lines[7 * k + 4][10 : comma]) // 5
-	new_line = lines[7 * k + 4].find('\n')
-	j = int(lines[7 * k + 4][comma + 12 : new_line]) - 1
+	comma = lines[7 * k + 3].find(',')
+	i = int(lines[7 * k + 3][10 : comma]) // 5
+	new_line = lines[7 * k + 3].find('\n')
+	j = int(lines[7 * k + 3][comma + 12 : new_line]) - 1
 	fn[j, i] = float(lines[7 * k + 5])
 	ll[j, i] = float(lines[7 * k + 6])
 	
