@@ -25,10 +25,10 @@ model.to(device)
 sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
-iid = np.zeros(15)
-ood = np.zeros(15)
+iid = np.zeros(11)
+ood = np.zeros(11)
 
-for i in range(-2, 13):
+for i in range(11):
 	a = i / 10
 	sd = model.state_dict()
 	for key in sd:
@@ -43,7 +43,7 @@ for i in range(-2, 13):
 		total += y.size(0)
 		correct += (pred.to('cpu').argmax(1) == y).sum()
 		x = x.to('cpu')
-	iid[i + 2] = correct / total
+	iid[i] = correct / total
 	correct = 0
 	total = 0
 	for x, y in OOD_test_loader:
@@ -52,8 +52,8 @@ for i in range(-2, 13):
 		total += y.size(0)
 		correct += (pred.to('cpu').argmax(1) == y).sum()
 		x = x.to('cpu')
-	ood[i + 2] = correct / total
-	
+	ood[i] = correct / total
+
 print(iid)
 print(ood)
 plt.plot(iid, ood)
