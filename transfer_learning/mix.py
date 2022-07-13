@@ -25,8 +25,8 @@ model.to(device)
 sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
-iid = []
-ood = []
+iid = numpy.zeros(15)
+ood = numpy.zeros(15)
 
 for i in range(-2, 13):
 	a = i / 10
@@ -42,7 +42,7 @@ for i in range(-2, 13):
 		total += y.size(0)
 		correct += (pred.argmax(1) == y.to(device)).sum()
 		x = x.to('cpu')
-	iid.append(correct / total)
+	iid[i + 2] = correct / total
 	correct = 0
 	total = 0
 	for x, y in OOD_test_loader:
@@ -51,9 +51,9 @@ for i in range(-2, 13):
 		total += y.size(0)
 		correct += (pred.argmax(1) == y.to(device)).sum()
 		x = x.to('cpu')
-	ood.append(correct / total)
+	ood[i + 2] = correct / total
 	
-plt.plot(iid, ood)
+plt.plot(iid.to('cpu'), ood.to('cpu'))
 plt.xlabel('IID accuracy')
 plt.ylabel('OOD accuracy')
 fig = plt.gcf()
