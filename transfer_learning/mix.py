@@ -59,7 +59,7 @@ print(ood)
 plt.scatter(iid, ood, c = plt.cm.rainbow(np.linspace(0, 1, 8)))
 
 for i in range(8):
-	plt.annotate(f'a = {a}', (iid[i], ood[i]))
+	plt.annotate(f'a = {i}', (iid[i], ood[i]))
 
 plt.xlabel('IID accuracy')
 plt.ylabel('OOD accuracy')
