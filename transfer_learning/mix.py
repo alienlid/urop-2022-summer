@@ -56,7 +56,7 @@ for i in range(8):
 
 print(iid)
 print(ood)
-plt.scatter(iid, ood, plt.cm.rainbow(np.linspace(0, 1, 8)))
+plt.scatter(iid, ood, c = plt.cm.rainbow(np.linspace(0, 1, 8)))
 
 for i in range(8):
 	plt.annotate(f'a = {a}', (iid[i], ood[i]))
