@@ -25,10 +25,10 @@ model.to(device)
 sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
-iid = np.zeros(11)
-ood = np.zeros(11)
+iid = np.zeros(8)
+ood = np.zeros(8)
 
-for i in range(11):
+for i in range(8):
 	a = i / 10
 	sd = model.state_dict()
 	for key in sd:
@@ -56,7 +56,11 @@ for i in range(11):
 
 print(iid)
 print(ood)
-plt.plot(iid, ood)
+plt.scatter(iid, ood, plt.cm.rainbow(np.linspace(0, 1, 8)))
+
+for i in range(8):
+	plt.annotate(f'a = {a}', (iid[i], ood[i]))
+
 plt.xlabel('IID accuracy')
 plt.ylabel('OOD accuracy')
 fig = plt.gcf()
