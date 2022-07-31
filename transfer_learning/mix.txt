@@ -1,0 +1,735 @@
+Shortcut level: 0Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94999999 0.95240003 0.9526     0.95139998 0.94840002 0.9411
+ 0.93080002 0.91109997]
+[0.95190001 0.95349997 0.95420003 0.95349997 0.949      0.94330001
+ 0.93330002 0.91570002]
+Shortcut level: 5Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95120001 0.9515     0.94739997 0.94209999 0.93239999 0.91670001
+ 0.8969     0.8721    ]
+[0.92009997 0.92830002 0.93269998 0.93409997 0.93059999 0.92430001
+ 0.91399997 0.8944    ]
+Shortcut level: 10Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94669998 0.94779998 0.9461     0.94160002 0.93349999 0.91820002
+ 0.8994     0.87029999]
+[0.88950002 0.90170002 0.91140002 0.91610003 0.91579998 0.91009998
+ 0.89569998 0.86870003]
+Shortcut level: 15Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94730002 0.94590002 0.94400001 0.9382     0.92860001 0.91140002
+ 0.88929999 0.8581    ]
+[0.84240001 0.86000001 0.87470001 0.8829     0.88679999 0.8786
+ 0.85860002 0.82260001]
+Shortcut level: 20Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.93809998 0.93940002 0.93449998 0.92909998 0.91570002 0.89560002
+ 0.86519998 0.82410002]
+[0.77990001 0.80290002 0.81770003 0.82639998 0.82270002 0.81569999
+ 0.79339999 0.7579    ]
+Shortcut level: 25Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95910001 0.95969999 0.95920002 0.95679998 0.95380002 0.94679999
+ 0.93400002 0.91439998]
+[0.94639999 0.94819999 0.94819999 0.94690001 0.94440001 0.93800002
+ 0.92809999 0.91109997]
+Shortcut level: 30Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9598     0.9594     0.95859998 0.95590001 0.94809997 0.93720001
+ 0.921      0.8998    ]
+[0.91680002 0.92339998 0.9285     0.9285     0.9249     0.92009997
+ 0.90649998 0.88340002]
+Shortcut level: 35Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96079999 0.95999998 0.95730001 0.95200002 0.94419998 0.92900002
+ 0.90679997 0.8768    ]
+[0.88429999 0.89920002 0.90939999 0.91289997 0.91009998 0.90280002
+ 0.88309997 0.85299999]
+Shortcut level: 40Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95639998 0.95639998 0.95469999 0.94870001 0.9386     0.92250001
+ 0.89649999 0.85949999]
+[0.83539999 0.8524     0.86409998 0.86949998 0.8739     0.86430001
+ 0.84630001 0.81309998]
+Shortcut level: 45Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95200002 0.95200002 0.95020002 0.94419998 0.93370003 0.91769999
+ 0.89310002 0.85619998]
+[0.77100003 0.79409999 0.81029999 0.81910002 0.8197     0.81059998
+ 0.78869998 0.75470001]
+Shortcut level: 50Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97229999 0.97329998 0.972      0.97060001 0.96640003 0.95810002
+ 0.94480002 0.92229998]
+[0.94410002 0.94599998 0.94569999 0.9447     0.94139999 0.93599999
+ 0.92460001 0.90549999]
+Shortcut level: 55Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9698     0.97119999 0.96939999 0.96179998 0.94910002 0.93110001
+ 0.91240001 0.88669997]
+[0.91009998 0.91600001 0.921      0.92159998 0.9188     0.9102
+ 0.89670002 0.87279999]
+Shortcut level: 60Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.972      0.97289997 0.97229999 0.96880001 0.96160001 0.95289999
+ 0.9346     0.90189999]
+[0.8696     0.87830001 0.88169998 0.88       0.87559998 0.86659998
+ 0.84799999 0.81559998]
+Shortcut level: 65Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96939999 0.9698     0.96920002 0.96579999 0.9576     0.9411
+ 0.91710001 0.88419998]
+[0.81940001 0.83999997 0.85780001 0.8646     0.86390001 0.85089999
+ 0.82959998 0.79710001]
+Shortcut level: 70Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97070003 0.97030002 0.96749997 0.96100003 0.94950002 0.92589998
+ 0.89920002 0.86400002]
+[0.81099999 0.82279998 0.82980001 0.82870001 0.81690001 0.79909998
+ 0.76980001 0.72549999]
+Shortcut level: 75Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98040003 0.98049998 0.98009998 0.97839999 0.9727     0.96219999
+ 0.94910002 0.92690003]
+[0.92820001 0.92970002 0.92860001 0.92640001 0.92019999 0.91420001
+ 0.90210003 0.88279998]
+Shortcut level: 80Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98280001 0.9824     0.98110002 0.97539997 0.96640003 0.95209998
+ 0.92940003 0.90270001]
+[0.88569999 0.89810002 0.90350002 0.9048     0.90210003 0.89289999
+ 0.8793     0.85610002]
+Shortcut level: 85Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9849     0.98470002 0.98339999 0.98000002 0.97310001 0.96429998
+ 0.94620001 0.9192    ]
+[0.85579997 0.86470002 0.866      0.86549997 0.85600001 0.84549999
+ 0.824      0.7974    ]
+Shortcut level: 90Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98659998 0.986      0.98519999 0.9824     0.97670001 0.96289998
+ 0.94379997 0.91259998]
+[0.8089     0.82120001 0.82560003 0.82870001 0.82260001 0.80729997
+ 0.78780001 0.75700003]
+Shortcut level: 95Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9896     0.98979998 0.9885     0.98699999 0.9817     0.97070003
+ 0.94989997 0.91970003]
+[0.78460002 0.79070002 0.79149997 0.7859     0.7737     0.7471
+ 0.7155     0.66960001]
+Shortcut level: 100Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99970001 0.9993     0.9964     0.98509997 0.96670002 0.94620001
+ 0.9228     0.90280002]
+[0.27079999 0.30149999 0.34639999 0.40779999 0.477      0.55010003
+ 0.61909997 0.68019998]
+Shortcut level: 0Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94940001 0.9501     0.9472     0.94080001 0.93080002 0.91890001
+ 0.90060002 0.87540001]
+[0.93150002 0.93709999 0.93879998 0.93779999 0.93510002 0.92760003
+ 0.91460001 0.89200002]
+Shortcut level: 5Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94489998 0.94580001 0.94480002 0.93830001 0.9271     0.91159999
+ 0.89170003 0.86129999]
+[0.89410001 0.90570003 0.9149     0.91869998 0.91579998 0.90829998
+ 0.89289999 0.87010002]
+Shortcut level: 10Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94260001 0.94300002 0.9382     0.92970002 0.91649997 0.89639997
+ 0.87010002 0.83469999]
+[0.84069997 0.8624     0.87849998 0.88929999 0.89270002 0.88810003
+ 0.87290001 0.84009999]
+Shortcut level: 15Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.93629998 0.9357     0.9307     0.92250001 0.91049999 0.88700002
+ 0.85680002 0.81889999]
+[0.74430001 0.7719     0.79509997 0.81029999 0.81720001 0.8143
+ 0.79470003 0.75929999]
+Shortcut level: 20Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9587     0.9598     0.96020001 0.95819998 0.95389998 0.94389999
+ 0.93190002 0.91049999]
+[0.94959998 0.95240003 0.95340002 0.9508     0.94669998 0.93849999
+ 0.92760003 0.90979999]
+Shortcut level: 25Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96039999 0.95990002 0.95810002 0.95450002 0.94559997 0.93400002
+ 0.91369998 0.88429999]
+[0.91949999 0.92650002 0.93190002 0.9332     0.93150002 0.92570001
+ 0.9095     0.88480002]
+Shortcut level: 30Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9605     0.96069998 0.95740002 0.95370001 0.94270003 0.92900002
+ 0.90960002 0.87919998]
+[0.89029998 0.90109998 0.90820003 0.90960002 0.90649998 0.89579999
+ 0.88099998 0.85509998]
+Shortcut level: 35Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9551     0.954      0.95179999 0.94639999 0.93650001 0.92320001
+ 0.90140003 0.86629999]
+[0.82359999 0.84280002 0.86009997 0.86860001 0.87040001 0.8664
+ 0.84820002 0.82169998]
+Shortcut level: 40Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95060003 0.9483     0.94489998 0.93650001 0.9249     0.90829998
+ 0.87840003 0.8387    ]
+[0.73369998 0.75830001 0.77679998 0.78689998 0.79100001 0.787
+ 0.76920003 0.73930001]
+Shortcut level: 45Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97000003 0.97140002 0.9709     0.96890002 0.9641     0.95499998
+ 0.94220001 0.92339998]
+[0.94499999 0.94730002 0.94730002 0.94440001 0.94069999 0.93510002
+ 0.92400002 0.90429997]
+Shortcut level: 50Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96810001 0.96850002 0.96670002 0.96380001 0.95950001 0.94910002
+ 0.93059999 0.90200001]
+[0.9145     0.91949999 0.9253     0.92699999 0.9228     0.91589999
+ 0.90359998 0.87760001]
+Shortcut level: 55Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96899998 0.96880001 0.96600002 0.9623     0.95380002 0.94349998
+ 0.92650002 0.89630002]
+[0.88800001 0.89810002 0.9016     0.90439999 0.89780003 0.88520002
+ 0.86790001 0.83829999]
+Shortcut level: 60Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96439999 0.96469998 0.96380001 0.96100003 0.95730001 0.94590002
+ 0.92449999 0.8933    ]
+[0.82260001 0.83459997 0.84069997 0.84329998 0.83410001 0.8204
+ 0.79830003 0.76370001]
+Shortcut level: 65Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96539998 0.96380001 0.96310002 0.95679998 0.94880003 0.93129998
+ 0.90289998 0.8646    ]
+[0.77649999 0.78869998 0.7942     0.78979999 0.7798     0.764
+ 0.73549998 0.69559997]
+Shortcut level: 70Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97890002 0.98009998 0.97909999 0.97659999 0.97219998 0.96380001
+ 0.9483     0.92439997]
+[0.9314     0.93480003 0.93510002 0.93180001 0.9267     0.91869998
+ 0.90549999 0.88410002]
+Shortcut level: 75Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97979999 0.98070002 0.98030001 0.97869998 0.9727     0.96259999
+ 0.9443     0.91939998]
+[0.89649999 0.90429997 0.91039997 0.90969998 0.90570003 0.89679998
+ 0.88069999 0.85280001]
+Shortcut level: 80Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98210001 0.98210001 0.98040003 0.9752     0.963      0.94630003
+ 0.92299998 0.8937    ]
+[0.87019998 0.87709999 0.88020003 0.8804     0.8732     0.86009997
+ 0.84240001 0.81290001]
+Shortcut level: 85Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98220003 0.98150003 0.98049998 0.97780001 0.97180003 0.96340001
+ 0.94669998 0.91939998]
+[0.8531     0.85930002 0.85869998 0.85540003 0.84780002 0.83160001
+ 0.81089997 0.77759999]
+Shortcut level: 90Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98500001 0.98509997 0.98460001 0.98290002 0.97850001 0.96810001
+ 0.94809997 0.91750002]
+[0.72500002 0.74070001 0.74510002 0.74400002 0.73470002 0.71359998
+ 0.68190002 0.64609998]
+Shortcut level: 95Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99470001 0.99510002 0.99510002 0.99269998 0.98680001 0.97689998
+ 0.96249998 0.94129997]
+[0.88819999 0.89670002 0.89960003 0.89859998 0.89270002 0.88529998
+ 0.87330002 0.85860002]
+Shortcut level: 100Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99989998 0.99980003 0.99879998 0.99580002 0.98390001 0.96710002
+ 0.94239998 0.91119999]
+[0.2929     0.3224     0.36669999 0.4251     0.4786     0.52880001
+ 0.57419997 0.61369997]
+Shortcut level: 0Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9436     0.94520003 0.94220001 0.9346     0.92040002 0.90259999
+ 0.88139999 0.84930003]
+[0.88520002 0.90039998 0.91320002 0.91710001 0.91850001 0.91070002
+ 0.89810002 0.8707    ]
+Shortcut level: 5Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94260001 0.94129997 0.9375     0.9303     0.91640002 0.89950001
+ 0.87150002 0.83600003]
+[0.8466     0.86369997 0.87459999 0.8793     0.88       0.8732
+ 0.85589999 0.82179999]
+Shortcut level: 10Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.93480003 0.93290001 0.92610002 0.91759998 0.89920002 0.87330002
+ 0.83679998 0.79769999]
+[0.77939999 0.80110002 0.81339997 0.82450002 0.82059997 0.80900002
+ 0.78829998 0.75129998]
+Shortcut level: 15Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95819998 0.958      0.95719999 0.95459998 0.94889998 0.93919998
+ 0.92470002 0.90240002]
+[0.95169997 0.95300001 0.9526     0.9508     0.94730002 0.93790001
+ 0.92650002 0.90829998]
+Shortcut level: 20Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95469999 0.95459998 0.95289999 0.94840002 0.94059998 0.9289
+ 0.91240001 0.8822    ]
+[0.92250001 0.92970002 0.93510002 0.93449998 0.93180001 0.92430001
+ 0.90899998 0.8872    ]
+Shortcut level: 25Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9526     0.95190001 0.95060003 0.9472     0.93760002 0.9224
+ 0.90469998 0.87400001]
+[0.87550002 0.89020002 0.89819998 0.90189999 0.898      0.89139998
+ 0.87739998 0.84899998]
+Shortcut level: 30Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95060003 0.95120001 0.94760001 0.94400001 0.93279999 0.91540003
+ 0.88880002 0.85329998]
+[0.83829999 0.85399997 0.86610001 0.87379998 0.87029999 0.8617
+ 0.84320003 0.81260002]
+Shortcut level: 35Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94319999 0.94529998 0.94309998 0.93409997 0.91780001 0.89240003
+ 0.85769999 0.8143    ]
+[0.7353     0.773      0.79820001 0.81950003 0.82910001 0.82179999
+ 0.7978     0.755     ]
+Shortcut level: 40Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96579999 0.96619999 0.96329999 0.95920002 0.9544     0.94459999
+ 0.92739999 0.90619999]
+[0.94309998 0.94599998 0.94620001 0.9454     0.94139999 0.93440002
+ 0.92290002 0.90499997]
+Shortcut level: 45Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96359998 0.96329999 0.96149999 0.95840001 0.95240003 0.94209999
+ 0.92690003 0.90109998]
+[0.91720003 0.92220002 0.92479998 0.9253     0.92129999 0.91579998
+ 0.90289998 0.87949997]
+Shortcut level: 50Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9623     0.96329999 0.96200001 0.95789999 0.9508     0.94
+ 0.92150003 0.89209998]
+[0.87760001 0.88679999 0.89469999 0.89539999 0.89120001 0.88020003
+ 0.86229998 0.8319    ]
+Shortcut level: 55Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96289998 0.96340001 0.9619     0.95819998 0.94919997 0.93440002
+ 0.91100001 0.87910002]
+[0.8326     0.84909999 0.86339998 0.8696     0.86879998 0.85970002
+ 0.84079999 0.80779999]
+Shortcut level: 60Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95910001 0.95959997 0.95670003 0.95380002 0.94590002 0.93290001
+ 0.91109997 0.87370002]
+[0.74940002 0.76959997 0.78289998 0.78850001 0.78560001 0.7719
+ 0.74779999 0.70990002]
+Shortcut level: 65Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97920001 0.97890002 0.97729999 0.9752     0.9691     0.95959997
+ 0.94679999 0.92909998]
+[0.93610001 0.93800002 0.93849999 0.9368     0.93099999 0.92299998
+ 0.91339999 0.89480001]
+Shortcut level: 70Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97549999 0.9763     0.97359997 0.96880001 0.96219999 0.95060003
+ 0.93290001 0.9041    ]
+[0.8962     0.90369999 0.91060001 0.9109     0.90890002 0.90170002
+ 0.88599998 0.85939997]
+Shortcut level: 75Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97960001 0.98009998 0.97780001 0.97399998 0.96850002 0.95709997
+ 0.93839997 0.90920001]
+[0.86720002 0.87980002 0.8854     0.88419998 0.88020003 0.8653
+ 0.84119999 0.80729997]
+Shortcut level: 80Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97850001 0.97750002 0.97719997 0.97460002 0.96869999 0.95389998
+ 0.93620002 0.90869999]
+[0.81529999 0.82669997 0.8337     0.83520001 0.82910001 0.81339997
+ 0.79030001 0.75690001]
+Shortcut level: 85Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97899997 0.97960001 0.97839999 0.97610003 0.97250003 0.95959997
+ 0.93800002 0.90609998]
+[0.76389998 0.77249998 0.7784     0.77770001 0.76639998 0.74370003
+ 0.71319997 0.67360002]
+Shortcut level: 90Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98809999 0.98830003 0.98769999 0.98449999 0.97670001 0.96350002
+ 0.9425     0.91979998]
+[0.8973     0.90079999 0.90149999 0.90130001 0.8987     0.88929999
+ 0.87709999 0.85949999]
+Shortcut level: 95Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9928     0.99290001 0.99229997 0.99089998 0.98659998 0.9756
+ 0.95639998 0.93150002]
+[0.82639998 0.84350002 0.8502     0.85509998 0.85140002 0.84219998
+ 0.82569999 0.80059999]
+Shortcut level: 100Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[1.         0.99989998 0.99959999 0.99650002 0.98540002 0.9677
+ 0.94849998 0.92760003]
+[0.22750001 0.2482     0.28209999 0.33360001 0.38730001 0.44499999
+ 0.49950001 0.5503    ]
+Shortcut level: 0Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94059998 0.93900001 0.93400002 0.92900002 0.917      0.90350002
+ 0.88309997 0.85360003]
+[0.84719998 0.8646     0.87690002 0.88029999 0.87879997 0.86699998
+ 0.84630001 0.81239998]
+Shortcut level: 5Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9303     0.93010002 0.92339998 0.91189998 0.89179999 0.86400002
+ 0.83130002 0.79049999]
+[0.7471     0.77960002 0.80309999 0.81699997 0.82380003 0.81510001
+ 0.7956     0.75950003]
+Shortcut level: 10Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95380002 0.95459998 0.9533     0.95090002 0.94459999 0.93529999
+ 0.92400002 0.9066    ]
+[0.9515     0.95270002 0.95160002 0.949      0.94450003 0.93760002
+ 0.92720002 0.9102    ]
+Shortcut level: 15Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95349997 0.95249999 0.95230001 0.94870001 0.94099998 0.92809999
+ 0.9109     0.8847    ]
+[0.91850001 0.92750001 0.93190002 0.9325     0.9314     0.926
+ 0.91299999 0.89099997]
+Shortcut level: 20Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9515     0.95090002 0.94859999 0.94340003 0.93190002 0.91799998
+ 0.89829999 0.87110001]
+[0.87949997 0.89300001 0.90350002 0.90799999 0.90829998 0.90020001
+ 0.88730001 0.85839999]
+Shortcut level: 25Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94959998 0.95130002 0.94910002 0.94150001 0.93129998 0.91320002
+ 0.88669997 0.84799999]
+[0.84310001 0.861      0.87370002 0.88169998 0.88389999 0.87940001
+ 0.86559999 0.83740002]
+Shortcut level: 30Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94559997 0.9454     0.94230002 0.93660003 0.9228     0.90219998
+ 0.87300003 0.82980001]
+[0.764      0.78759998 0.8021     0.80900002 0.80860001 0.79820001
+ 0.78140002 0.74809998]
+Shortcut level: 35Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96380001 0.96359998 0.96240002 0.9598     0.95410001 0.94340003
+ 0.93099999 0.91009998]
+[0.94630003 0.94730002 0.94459999 0.94220001 0.9375     0.92970002
+ 0.92009997 0.90310001]
+Shortcut level: 40Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96600002 0.96640003 0.96319997 0.95920002 0.95240003 0.93980002
+ 0.91900003 0.89109999]
+[0.91720003 0.92250001 0.92610002 0.926      0.92129999 0.91420001
+ 0.89850003 0.87440002]
+Shortcut level: 45Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96499997 0.96359998 0.9623     0.95700002 0.94999999 0.93769997
+ 0.91960001 0.89420003]
+[0.8876     0.89850003 0.90200001 0.90649998 0.90359998 0.89380002
+ 0.8775     0.85219997]
+Shortcut level: 50Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96380001 0.96340001 0.96170002 0.95679998 0.94910002 0.93610001
+ 0.92000002 0.88789999]
+[0.85689998 0.86669999 0.87519997 0.87529999 0.86949998 0.85759997
+ 0.83359998 0.79619998]
+Shortcut level: 55Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95749998 0.95730001 0.95469999 0.94700003 0.93559998 0.91640002
+ 0.89029998 0.8549    ]
+[0.80059999 0.81690001 0.83060002 0.83600003 0.83240002 0.82139999
+ 0.79699999 0.75880003]
+Shortcut level: 60Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97539997 0.9763     0.97509998 0.97219998 0.96820003 0.9587
+ 0.94559997 0.92339998]
+[0.94069999 0.94270003 0.94300002 0.93970001 0.93610001 0.92799997
+ 0.91670001 0.89719999]
+Shortcut level: 65Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97539997 0.97640002 0.97479999 0.97299999 0.96619999 0.95539999
+ 0.94220001 0.91680002]
+[0.90170002 0.90920001 0.9138     0.91430002 0.90880001 0.89859998
+ 0.88260001 0.85769999]
+Shortcut level: 70Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97390002 0.9745     0.97320002 0.96890002 0.9576     0.93830001
+ 0.91049999 0.87669998]
+[0.85780001 0.87840003 0.89069998 0.90030003 0.90200001 0.89389998
+ 0.87709999 0.85000002]
+Shortcut level: 75Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97469997 0.97500002 0.97390002 0.97170001 0.96740001 0.95660001
+ 0.94139999 0.91589999]
+[0.83099997 0.8423     0.84810001 0.84930003 0.84719998 0.83850002
+ 0.81639999 0.78320003]
+Shortcut level: 80Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9777     0.97759998 0.97640002 0.97439998 0.9698     0.95829999
+ 0.93650001 0.90539998]
+[0.80220002 0.80599999 0.8057     0.79949999 0.78179997 0.75620002
+ 0.72469997 0.68339998]
+Shortcut level: 85Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98720002 0.98750001 0.98640001 0.98460001 0.98100001 0.9745
+ 0.96109998 0.93849999]
+[0.91710001 0.92079997 0.92229998 0.92000002 0.91549999 0.9077
+ 0.89520001 0.87879997]
+Shortcut level: 90Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99010003 0.98949999 0.98839998 0.98570001 0.97649997 0.95929998
+ 0.9404     0.9149    ]
+[0.86470002 0.87150002 0.87470001 0.87629998 0.87080002 0.86009997
+ 0.84329998 0.81410003]
+Shortcut level: 95Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99180001 0.99169999 0.9921     0.98940003 0.98269999 0.96969998
+ 0.94779998 0.91890001]
+[0.80659997 0.81980002 0.82139999 0.81629997 0.80510002 0.7852
+ 0.75819999 0.72649997]
+Shortcut level: 100Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99989998 0.99989998 0.99989998 0.99839997 0.98970002 0.97530001
+ 0.95459998 0.93129998]
+[0.24089999 0.2536     0.27500001 0.31729999 0.3795     0.44580001
+ 0.50849998 0.54530001]
+Shortcut level: 0Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.92989999 0.92949998 0.92500001 0.91119999 0.8919     0.8628
+ 0.8312     0.7974    ]
+[0.77359998 0.79939997 0.82209998 0.83200002 0.83459997 0.82630002
+ 0.80589998 0.76340002]
+Shortcut level: 5Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95469999 0.9558     0.95279998 0.95039999 0.94590002 0.93809998
+ 0.92409998 0.90439999]
+[0.95240003 0.95469999 0.95270002 0.95230001 0.94849998 0.94169998
+ 0.9307     0.90939999]
+Shortcut level: 10Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95200002 0.95130002 0.94800001 0.94330001 0.93510002 0.9228
+ 0.90249997 0.87980002]
+[0.92589998 0.93279999 0.93629998 0.93709999 0.93379998 0.92659998
+ 0.9156     0.89340001]
+Shortcut level: 15Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94910002 0.9479     0.94379997 0.93760002 0.92589998 0.90880001
+ 0.88190001 0.85299999]
+[0.90030003 0.91180003 0.91979998 0.91979998 0.9188     0.90750003
+ 0.88810003 0.85689998]
+Shortcut level: 20Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94779998 0.94690001 0.9447     0.9368     0.92690003 0.9073
+ 0.88270003 0.84909999]
+[0.8599     0.8721     0.8811     0.8854     0.8858     0.87760001
+ 0.8624     0.83020002]
+Shortcut level: 25Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.94410002 0.94270003 0.93900001 0.92930001 0.91479999 0.88919997
+ 0.85540003 0.80919999]
+[0.75370002 0.78649998 0.80879998 0.82489997 0.82819998 0.8229
+ 0.80070001 0.76209998]
+Shortcut level: 30Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96210003 0.96329999 0.96270001 0.96139997 0.95749998 0.94989997
+ 0.93430001 0.91509998]
+[0.94660002 0.949      0.94959998 0.9465     0.94370002 0.93779999
+ 0.92460001 0.9091    ]
+Shortcut level: 35Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96079999 0.96149999 0.96179998 0.95880002 0.95090002 0.94220001
+ 0.92430001 0.89649999]
+[0.92040002 0.92549998 0.93000001 0.9303     0.92570001 0.91909999
+ 0.90810001 0.88429999]
+Shortcut level: 40Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.96170002 0.96030003 0.95959997 0.9551     0.94660002 0.93529999
+ 0.91960001 0.89240003]
+[0.88520002 0.89529997 0.90200001 0.90469998 0.90140003 0.89410001
+ 0.87720001 0.8531    ]
+Shortcut level: 45Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95660001 0.95709997 0.95649999 0.95340002 0.94620001 0.9325
+ 0.91219997 0.8757    ]
+[0.86339998 0.87419999 0.88120002 0.8811     0.8757     0.86610001
+ 0.84490001 0.80720001]
+Shortcut level: 50Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.95639998 0.95490003 0.95279998 0.94910002 0.93949997 0.92309999
+ 0.89679998 0.85650003]
+[0.79460001 0.81040001 0.82130003 0.82200003 0.81269997 0.79549998
+ 0.76590002 0.72219998]
+Shortcut level: 55Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97210002 0.97250003 0.97180003 0.96929997 0.96399999 0.95609999
+ 0.94050002 0.91860002]
+[0.93919998 0.9404     0.94260001 0.94050002 0.93669999 0.92610002
+ 0.9156     0.89600003]
+Shortcut level: 60Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.972      0.97170001 0.97000003 0.96569997 0.95899999 0.94819999
+ 0.93290001 0.90969998]
+[0.9109     0.91680002 0.9192     0.91710001 0.91119999 0.90310001
+ 0.88889998 0.861     ]
+Shortcut level: 65Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97280002 0.9734     0.97289997 0.9702     0.96460003 0.95200002
+ 0.93519998 0.90570003]
+[0.87809998 0.88660002 0.8915     0.89069998 0.88410002 0.8707
+ 0.8484     0.81639999]
+Shortcut level: 70Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97030002 0.9709     0.96939999 0.96700001 0.96090001 0.95130002
+ 0.93220001 0.90570003]
+[0.84789997 0.85610002 0.85829997 0.85769999 0.84939998 0.83600003
+ 0.81089997 0.77450001]
+Shortcut level: 75Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.97180003 0.97240001 0.97119999 0.96920002 0.96310002 0.9522
+ 0.92820001 0.89090002]
+[0.79949999 0.81269997 0.8204     0.8193     0.81230003 0.79750001
+ 0.77280003 0.73379999]
+Shortcut level: 80Corruption severity: 1cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98470002 0.98470002 0.9849     0.98360002 0.97890002 0.97130001
+ 0.95819998 0.93910003]
+[0.92390001 0.92659998 0.9285     0.92769998 0.92390001 0.91670001
+ 0.90719998 0.88770002]
+Shortcut level: 85Corruption severity: 2cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.9867     0.98710001 0.98409998 0.97659999 0.96020001 0.9375
+ 0.91530001 0.88630003]
+[0.88419998 0.89170003 0.89429998 0.89230001 0.88669997 0.87559998
+ 0.85790002 0.83149999]
+Shortcut level: 90Corruption severity: 3cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.98820001 0.98809999 0.98729998 0.98500001 0.98049998 0.9709
+ 0.9562     0.92909998]
+[0.8545     0.86119998 0.86129999 0.8545     0.84570003 0.8301
+ 0.80729997 0.7755    ]
+Shortcut level: 95Corruption severity: 4cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[0.99070001 0.99070001 0.99019998 0.98879999 0.98570001 0.97759998
+ 0.9598     0.93150002]
+[0.73940003 0.74519998 0.74229997 0.73100001 0.71219999 0.68669999
+ 0.66509998 0.64060003]
+Shortcut level: 100Corruption severity: 5cuda
+Files already downloaded and verified
+Files already downloaded and verified
+[1.         0.99989998 0.99970001 0.9957     0.97970003 0.954
+ 0.92189997 0.88870001]
+[0.14049999 0.1723     0.2067     0.2423     0.29460001 0.36219999
+ 0.41679999 0.45159999]
