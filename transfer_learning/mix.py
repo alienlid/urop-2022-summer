@@ -41,12 +41,8 @@ for i in range(8):
 		sd[key] = (1 - a) * sd_fn[key] + a * sd_ll[key]
 	model_fn_ll.load_state_dict(sd)
 	model_fn_ll.eval()
-	sd = model_fn_zs.state_dict()
-	for key in sd:
-		if key in ["fc.weight", "fc.bias"]:
-			sd[key] = sd_fn[key]
-		else:
-			sd[key] = (1 - a) * sd_fn[key] + a * sd[key];
+	for key in ["fc.weight", "fc.bias"]:
+		sd[key] = sd_fn[key]
 	model_fn_zs.load_state_dict(sd)
 	model_fn_zs.eval()
 	correct = 0
