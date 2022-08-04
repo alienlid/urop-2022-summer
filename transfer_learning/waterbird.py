@@ -52,20 +52,25 @@ for epoch in range(epochs):
     cost.backward()
     optimizer.step()
     scheduler.step()
-    x = x.to('cpu')
-    y = y.to('cpu')
+    # x = x.to('cpu')
+    # y = y.to('cpu')
   model.eval()
   y_pred = []
-  # y_true = []
-  # metadata = []
+  y_true = []
+  metadata = []
+  model = model.to('cpu')
   for x, y, z in val_loader:
-    x = x.to(device)
+    # x = x.to(device)
     # y = y.to(device)
     # z = z.to(device)
-    y_pred.append(model(x))
-    # y_true.append(y)
-    # metadata.append(z)
-    x = x.to('cpu')
+    y_pred.append(model(x).argmax(1))
+    y_true.append(y)
+    metadata.append(z)
+    # x = x.to('cpu')
     # y = y.to('cpu')
     # z = z.to('cpu')
-  print(val_dataset.eval(y_pred, val_dataset.y_array, val_dataset.metadata_array)[0])
+  y_pred = torch.cat(y_pred)
+  y_true = torch.cat(y_true)
+  metadata = torch.cat(metadata)
+  print(val_dataset.eval(y_pred, y_true, metadata)[0])
+  model = model.to(device)
