@@ -7,6 +7,19 @@ import torchvision.transforms as T
 import torchvision.datasets as datasets
 import wilds
 
+class AverageMeter(object):
+	def __init__(self):
+		self.num = 0
+		self.tot = 0
+
+	def update(self, val, sz):
+		self.num += val*sz
+		self.tot += sz
+
+	def mean(self):
+		if self.tot == 0: return None
+		return self.num / self.tot
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 print(device)
 
@@ -43,34 +56,36 @@ test_dataset = waterbird.get_subset('test', transform = transform_test)
 # test_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 64)
 
 for epoch in range(epochs):
-  for x, y, z in train_loader:
-    x = x.to(device)
-    y = y.to(device)
-    pred = model(x)
-    cost = loss(pred, y)
-    optimizer.zero_grad()
-    cost.backward()
-    optimizer.step()
-    scheduler.step()
-    # x = x.to('cpu')
-    # y = y.to('cpu')
-  model.eval()
-  y_pred = []
-  y_true = []
-  metadata = []
-  model = model.to('cpu')
-  for x, y, z in val_loader:
-    # x = x.to(device)
+	for x, y, z in train_loader:
+		x = x.to(device)
+		y = y.to(device)
+		pred = model(x)
+		cost = loss(pred, y)
+		optimizer.zero_grad()
+		cost.backward()
+		optimizer.step()
+		scheduler.step()
+		x = x.to('cpu')
+		y = y.to('cpu')
+	model.eval()
+	# ~ y_pred = []
+	# y_true = []
+	# metadata = []
+	wg_meters = defaultdict(lambda: AverageMeter())
+	for xb, yb, mb in val_loader:
+		x = x.to(device)
     # y = y.to(device)
     # z = z.to(device)
-    y_pred.append(model(x).argmax(1))
-    y_true.append(y)
-    metadata.append(z)
-    # x = x.to('cpu')
+    # ~ y_pred.append(model(x))
+    # y_true.append(y)
+    # metadata.append(z)
+		preds = model(xb).argmax(1).to('cpu')
+		is_correct = (preds == yb).float().numpy()
+		yb = yb.numpy()
+		for is_c, y, m in zip(is_correct, yb, mb):
+			wg_meters[(y,m)].update(is_c, 1)
+		x = x.to('cpu')
     # y = y.to('cpu')
     # z = z.to('cpu')
-  y_pred = torch.cat(y_pred)
-  y_true = torch.cat(y_true)
-  metadata = torch.cat(metadata)
-  print(val_dataset.eval(y_pred, y_true, metadata)[0])
-  model = model.to(device)
+  # ~ print(val_dataset.eval(y_pred, val_dataset.y_array, val_dataset.metadata_array)[0])
+	print(min(v.mean() for v in wg_meters.values()))
