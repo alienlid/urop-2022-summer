@@ -5,7 +5,9 @@ import torch
 import torch.nn as nn
 import torchvision
 import torchvision.datasets as datasets
+import torchvision.transforms as T
 from datasets import CIFAR10CS, transform_test_finetune
+from torch.cuda.amp import autocast
 import wilds
 
 transform_test = T.Compose([
@@ -38,13 +40,14 @@ test_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 6
 # ~ model_fn_zs.fc = nn.Linear(512, 10)
 # ~ model_fn_zs.to(device)
 
-model = torchvision.models.resnet18(pretrained = True)
+model = torchvision.models.resnet18()
 model.fc = nn.Linear(512, 2)
 model.to(device)
 
 # ~ sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 # ~ sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
+sd_zs = torchvision.models.resnet18(pretrained = True).to(device).state_dict()
 sd_fn = torch.load('epoch_18.pt')
 
 # ~ iid_ll = np.zeros(8)
@@ -60,11 +63,14 @@ for i in range(11):
 	# ~ sd = model_fn_ll.state_dict()
 	sd = model.state_dict()
 	for key in sd:
-		sd[key] = (1 - a) * sd_fn[key] + a * sd[key]
+		if key in ["fc.weight", "fc.bias"]:
+			sd[key] = sd_fn[key]
+		else:
+			sd[key] = (1 - a) * sd_fn[key] + a * sd_zs[key]
 	# ~ model_fn_ll.load_state_dict(sd)
 	# ~ model_fn_ll.eval()
-	for key in ["fc.weight", "fc.bias"]:
-		sd[key] = sd_fn[key]
+	# ~ for key in ["fc.weight", "fc.bias"]:
+		# ~ sd[key] = sd_fn[key]
 	# ~ model_fn_zs.load_state_dict(sd)
 	# ~ model_fn_zs.eval()
 	model.load_state_dict(sd)
@@ -118,8 +124,8 @@ for i in range(11):
 			is_correct = (preds == yb).float().numpy()
 			yb = yb.numpy()
 			for is_c, y, m in zip(is_correct, yb, mb):
-				tot[int(y)][int(m[0])] += int(is_c)
-				sz[int(y)][int(m[0])] += 1
+				# tot[int(y)][int(m[0])] += int(is_c)
+				# sz[int(y)][int(m[0])] += 1
 				if int(y) == int(m[0]):
 					mj_tot += int(is_c)
 					mj_sz += 1
@@ -154,5 +160,5 @@ plt.xlabel('Majority Accuracy')
 plt.ylabel('Minority Accuracy')
 fig = plt.gcf()
 fig.set_size_inches(14, 10)
-fig.savefig(f'mix-zs-{shortcut}-{severity}.png', dpi = 200)
+fig.savefig(f'mix-wb', dpi = 200)
 
