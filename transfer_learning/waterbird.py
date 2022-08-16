@@ -6,6 +6,8 @@ import torchvision
 import torchvision.transforms as T
 import torchvision.datasets as datasets
 import wilds
+from collections import defaultdict
+from torch.cuda.amp import autocast
 
 class AverageMeter(object):
 	def __init__(self):
@@ -68,24 +70,41 @@ for epoch in range(epochs):
 		x = x.to('cpu')
 		y = y.to('cpu')
 	model.eval()
-	# ~ y_pred = []
+	# y_pred = []
 	# y_true = []
 	# metadata = []
-	wg_meters = defaultdict(lambda: AverageMeter())
-	for xb, yb, mb in val_loader:
-		x = x.to(device)
-    # y = y.to(device)
-    # z = z.to(device)
-    # ~ y_pred.append(model(x))
-    # y_true.append(y)
-    # metadata.append(z)
-		preds = model(xb).argmax(1).to('cpu')
-		is_correct = (preds == yb).float().numpy()
-		yb = yb.numpy()
-		for is_c, y, m in zip(is_correct, yb, mb):
-			wg_meters[(y,m)].update(is_c, 1)
-		x = x.to('cpu')
-    # y = y.to('cpu')
-    # z = z.to('cpu')
-  # ~ print(val_dataset.eval(y_pred, val_dataset.y_array, val_dataset.metadata_array)[0])
-	print(min(v.mean() for v in wg_meters.values()))
+	# wg_meters = defaultdict(lambda: AverageMeter())
+	tot = [[0, 0], [0, 0]]
+	sz = [[0, 0], [0, 0]]
+	with torch.no_grad():
+		for xb, yb, mb in val_loader:
+			xb = xb.to(device, non_blocking = True)
+			# yb = yb.to(device)
+			# mb = mb.to(device)
+			# ~ y_pred.append(model(x))
+			#y_true.append(yb)
+			# metadata.append(mb)
+			with autocast(enabled = True):
+				logits = model(xb)
+			#y_pred.append(logits)
+			preds = logits.argmax(-1).to('cpu')
+			is_correct = (preds == yb).float().numpy()
+			yb = yb.numpy()
+			for is_c, y, m in zip(is_correct, yb, mb):
+				# wg_meters[(y, m)].update(is_c, 1)
+				tot[int(y)][int(m[0])] += int(is_c)
+				sz[int(y)][int(m[0])] += 1
+			xb = xb.to('cpu')
+			# yb = yb.to('cpu')
+			# mb = mb.to('cpu')
+	# y_pred = torch.cat(y_pred).to(device)
+	# y_true = torch.cat(y_true).to(device)
+	# metadata = torch.cat(metadata).to(device)
+	# print(val_dataset.eval(y_pred.argmax(1), y_true, metadata)[0])
+	# print(min(v.mean() for v in wg_meters.values()))
+	print(f'Epoch {epoch + 1}:')
+	print(tot[0][0] / sz[0][0])
+	print(tot[0][1] / sz[0][1])
+	print(tot[1][0] / sz[1][0])
+	print(tot[1][1] / sz[1][1])
+	torch.save(model.state_dict(), f'epoch_{epoch + 1}.pt')
