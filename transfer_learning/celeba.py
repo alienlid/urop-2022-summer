@@ -35,12 +35,22 @@ not_fc = [param for name, param in model.named_parameters() if name not in ["fc.
 optimizer = torch.optim.SGD([{'params': model.fc.parameters()}, {'params': not_fc, 'lr': learning_rate / 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
 scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 10000)
 
-train_dataset = datasets.CelebA(root = 'CelebA', split = 'train', download = True, transform = transform_train)
-train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 64, shuffle = True)
-valid_dataset = datasets.CelebA(root = 'CelebA', split = 'valid', download = True, transform = transform_test)
-valid_loader = torch.utils.data.DataLoader(dataset = valid_dataset, batch_size = 64, shuffle = True)
+train_dataset = datasets.ImageFolder('/mnt/cfs/datasets/celeba/celeba', transform_train)
+valid_dataset = datasets.ImageFolder('/mnt/cfs/datasets/celeba/celeba', transform_test)
 
-print(train_dataset.data[0])
+indices = list(range(len(train_dataset)))
+split = int(0.9 * len(train_dataset))
+train_idx, valid_idx = indices[:split], indices[split:]
+train_sampler = torch.utils.data.SubsetRandomSampler(train_idx)
+valid_sampler = torch.utils.data.SubsetRandomSampler(valid_idx)
+
+train_loader = torch.utils.data.DataLoader(train_dataset, batch_size = 64, sampler = train_sampler)
+valid_loader = torch.utils.data.DataLoader(valid_dataset, batch_size = 64, sampler = valid_sampler)
+# train_loader = torch.utils.data.DataLoader(dataset = train_dataset, batch_size = 64, shuffle = True)
+# valid_dataset = datasets.CelebA(root = 'mnt/cfs/datasets/celeba/celeba', split = 'valid', transform = transform_test)
+# valid_loader = torch.utils.data.DataLoader(dataset = valid_dataset, batch_size = 64, shuffle = True)
+
+# print(train_loader[0])
 
 # ~ for epoch in range(epochs):
 	# ~ for x, y, z in train_loader:
