@@ -81,36 +81,36 @@ valid_loader = torch.utils.data.DataLoader(dataset = valid_dataset, batch_size =
 # print(train_dataset[0])
 # print(len(valid_loader))
 
-# ~ for epoch in range(epochs):
-	# ~ for x, y, z in train_loader:
-		# ~ x = x.to(device)
-		# ~ y = y.to(device)
-		# ~ pred = model(x)
-		# ~ cost = loss(pred, y)
-		# ~ optimizer.zero_grad()
-		# ~ cost.backward()
-		# ~ optimizer.step()
-		# ~ scheduler.step()
-		# ~ x = x.to('cpu')
-		# ~ y = y.to('cpu')
-	# ~ model.eval()
-	# ~ tot = [[0, 0], [0, 0]]
-	# ~ sz = [[0, 0], [0, 0]]
-	# ~ with torch.no_grad():
-		# ~ for xb, yb, mb in val_loader:
-			# ~ xb = xb.to(device, non_blocking = True)
-			# ~ with autocast(enabled = True):
-				# ~ logits = model(xb)
-			# ~ preds = logits.argmax(-1).to('cpu')
-			# ~ is_correct = (preds == yb).float().numpy()
-			# ~ yb = yb.numpy()
-			# ~ for is_c, y, m in zip(is_correct, yb, mb):
-				# ~ tot[int(y)][int(m[0])] += int(is_c)
-				# ~ sz[int(y)][int(m[0])] += 1
-			# ~ xb = xb.to('cpu')
-	# ~ print(f'Epoch {epoch + 1}:')
-	# ~ print(tot[0][0] / sz[0][0])
-	# ~ print(tot[0][1] / sz[0][1])
-	# ~ print(tot[1][0] / sz[1][0])
-	# ~ print(tot[1][1] / sz[1][1])
-	# ~ torch.save(model.state_dict(), f'epoch_{epoch + 1}.pt')
+for epoch in range(epochs):
+	for x, y in train_loader:
+		x = x.to(device)
+		y = y.to(device)
+		pred = model(x)
+		cost = loss(pred, y[:,20])
+		optimizer.zero_grad()
+		cost.backward()
+		optimizer.step()
+		scheduler.step()
+		x = x.to('cpu')
+		y = y.to('cpu')
+	model.eval()
+	tot = [[0, 0], [0, 0]]
+	sz = [[0, 0], [0, 0]]
+	with torch.no_grad():
+		for xb, yb in val_loader:
+			xb = xb.to(device, non_blocking = True)
+			with autocast(enabled = True):
+				logits = model(xb)
+			preds = logits.argmax(-1).to('cpu')
+			is_correct = (preds == yb[:,20]).float().numpy()
+			yb = yb.numpy()
+			for is_c, y in zip(is_correct, yb):
+				tot[y[9]][y[20]] += int(is_c)
+				sz[y[9]][y[20]] += 1
+			xb = xb.to('cpu')
+	print(f'Epoch {epoch + 1}:')
+	print(tot[0][0] / sz[0][0])
+	print(tot[0][1] / sz[0][1])
+	print(tot[1][0] / sz[1][0])
+	print(tot[1][1] / sz[1][1])
+	torch.save(model.state_dict(), f'celeba_epoch_{epoch + 1}.pt')
