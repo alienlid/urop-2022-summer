@@ -19,41 +19,65 @@ class BAR(datasets.VisionDataset):
 		md = json.load(f)
 		if train:
 			for i in range(326):
-				self.data.append(Image.open(f'BAR/train/climbing_{i}.jpg'))
+				im = Image.open(f'BAR/train/climbing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(0)
 			for i in range(520):
-				self.data.append(Image.open(f'BAR/train/diving_{i}.jpg'))
+				im = Image.open(f'BAR/train/diving_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(1)
 			for i in range(163):
-				self.data.append(Image.open(f'BAR/train/fishing_{i}.jpg'))
+				im = Image.open(f'BAR/train/fishing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(2)
 			for i in range(336):
-				self.data.append(Image.open(f'BAR/train/racing_{i}.jpg'))
+				im = Image.open(f'BAR/train/racing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(3)
 			for i in range(317):
-				self.data.append(Image.open(f'BAR/train/throwing_{i}.jpg'))
+				im = Image.open(f'BAR/train/throwing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(4)
 			for i in range(279):
-				self.data.append(Image.open(f'BAR/train/pole vaulting_{i}.jpg'))
+				im = Image.open(f'BAR/train/pole vaulting_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(5)
 		else:
 			for i in range(326, 431):
-				self.data.append(Image.open(f'BAR/test/climbing_{i}.jpg'))
+				im = Image.open(f'BAR/train/climbing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(0)
 			for i in range(520, 679):
-				self.data.append(Image.open(f'BAR/test/diving_{i}.jpg'))
+				im = Image.open(f'BAR/train/diving_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(1)
 			for i in range(163, 205):
-				self.data.append(Image.open(f'BAR/test/fishing_{i}.jpg'))
+				im = Image.open(f'BAR/train/fishing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(2)
 			for i in range(336, 468):
-				self.data.append(Image.open(f'BAR/test/racing_{i}.jpg'))
+				im = Image.open(f'BAR/train/racing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(3)
 			for i in range(317, 402):
-				self.data.append(Image.open(f'BAR/test/throwing_{i}.jpg'))
+				im = Image.open(f'BAR/train/throwing_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(4)
 			for i in range(279, 410):
-				self.data.append(Image.open(f'BAR/test/pole vaulting_{i}.jpg'))
+				im = Image.open(f'BAR/train/pole vaulting_{i}.jpg')
+				self.data.append(im)
+				im.close()
 				self.target.append(5)
 
 	def __getitem__(self, index):
