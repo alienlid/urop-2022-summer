@@ -8,6 +8,8 @@ import torchvision.datasets as datasets
 import json
 from PIL import Image
 
+device = "cuda" if torch.cuda.is_available() else "cpu"
+
 class BAR(datasets.VisionDataset):
 	def __init__(self, root, train, transform):
 		super(BAR, self).__init__(root = root, transform = transform)
@@ -17,41 +19,41 @@ class BAR(datasets.VisionDataset):
 		md = json.load(f)
 		if train:
 			for i in range(326):
-				self.data.append(Image.open(f'climbing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/climbing_{i}.jpg'))
 				self.target.append(0)
 			for i in range(520):
-				self.data.append(Image.open(f'diving_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/diving_{i}.jpg'))
 				self.target.append(1)
 			for i in range(163):
-				self.data.append(Image.open(f'fishing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/fishing_{i}.jpg'))
 				self.target.append(2)
 			for i in range(336):
-				self.data.append(Image.open(f'racing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/racing_{i}.jpg'))
 				self.target.append(3)
 			for i in range(317):
-				self.data.append(Image.open(f'throwing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/throwing_{i}.jpg'))
 				self.target.append(4)
 			for i in range(279):
-				self.data.append(Image.open(f'pole vaulting_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/train/pole vaulting_{i}.jpg'))
 				self.target.append(5)
 		else:
 			for i in range(326, 431):
-				self.data.append(Image.open(f'climbing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/climbing_{i}.jpg'))
 				self.target.append(0)
 			for i in range(520, 679):
-				self.data.append(Image.open(f'diving_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/diving_{i}.jpg'))
 				self.target.append(1)
 			for i in range(163, 205):
-				self.data.append(Image.open(f'fishing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/fishing_{i}.jpg'))
 				self.target.append(2)
 			for i in range(336, 468):
-				self.data.append(Image.open(f'racing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/racing_{i}.jpg'))
 				self.target.append(3)
 			for i in range(317, 402):
-				self.data.append(Image.open(f'throwing_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/throwing_{i}.jpg'))
 				self.target.append(4)
 			for i in range(279, 410):
-				self.data.append(Image.open(f'pole vaulting_{i}.jpg'))
+				self.data.append(Image.open(f'BAR/test/pole vaulting_{i}.jpg'))
 				self.target.append(5)
 
 	def __getitem__(self, index):
@@ -73,6 +75,10 @@ transform_test = T.Compose([
 	T.ToTensor(),
 	T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),                            
 ])
+
+epochs = 20
+learning_rate = 1e-2
+loss = nn.CrossEntropyLoss()
 
 model = torchvision.models.resnet18(pretrained = True)
 model.fc = nn.Linear(512, 2)
