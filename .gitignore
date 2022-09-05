@@ -6,3 +6,5 @@ pretrained-models/
 *.pt
 *.out
 waterbirds/
+CelebA/
+BAR/
