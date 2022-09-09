@@ -7,6 +7,7 @@ import torchvision.transforms as T
 import torchvision.datasets as datasets
 import wilds
 from torch.cuda.amp import autocast
+from robustness import model_utils, datasets as dset
 
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -16,14 +17,14 @@ transform_train = T.Compose([
 	T.RandomResizedCrop(224),
 	T.RandomHorizontalFlip(),
 	T.ToTensor(),
-	T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),                            
+	T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
 ])
 
 transform_test = T.Compose([
-	T.Resize(256),                              
+	T.Resize(256),
 	T.CenterCrop(224),
 	T.ToTensor(),
-	T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),                            
+	T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
 ])
 
 epochs = 20
@@ -37,9 +38,16 @@ model[0] = model[0].to(device)
 model.append(torchvision.models.resnet101(pretrained = True))
 model[1].fc = nn.Linear(2048, 2)
 model[1] = model[1].to(device)
-model.append(torchvision.models.resnet18())
+m, _ = model_utils.make_and_restore_model(arch = 'resnet18', dataset = dset.ImageNet, resume_path = 'resnet18_l2_eps0.1.ckpt', pytorch_pretrained = False)
+model.append(m)
+"""
+model.append(imagenet_models.__dict__['resnet18'](num_classes = 1000, pretrained = False))
 ckpt = torch.load('resnet18_l2_eps0.1.ckpt')
-model[2].load_state_dict(ckpt['model_state_dict'])
+sd = ckpt['model']
+print(sd.keys())
+# sd = {k[len('module.'):]:v for k,v in sd.items()}
+model[2].load_state_dict(sd)
+"""
 model[2].fc = nn.Linear(512, 2)
 model[2] = model[2].to(device)
 
@@ -59,7 +67,7 @@ name = ['resnet18', 'resnet101', 'robust_resnet18']
 for i in range(3):
 	not_fc = [param for name, param in model[i].named_parameters() if name not in ["fc.weight", "fc.bias"]]
 	optimizer = torch.optim.SGD([{'params': model[i].fc.parameters()}, {'params': not_fc, 'lr': learning_rate / 10}], lr = learning_rate, momentum = 0.9, weight_decay = 1e-4)
-	scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 10000)
+	scheduler = torch.optim.lr_scheduler.OneCycleLR(optimizer, max_lr = 1e-2, total_steps = 1500)
 	for epoch in range(epochs):
 		for x, y, z in train_loader:
 			x = x.to(device)
