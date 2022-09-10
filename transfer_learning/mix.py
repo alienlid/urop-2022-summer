@@ -47,8 +47,14 @@ model.to(device)
 # ~ sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 # ~ sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
 
-sd_zs = torchvision.models.resnet18(pretrained = True).to(device).state_dict()
-sd_fn = torch.load('epoch_18.pt')
+sd_zs = []
+sd_zs.append(torchvision.models.resnet18(pretrained = True).to(device).state_dict())
+sd_zs.append(torchvision.models.resent101(pretrained = True).to(device).state_dict())
+sd_zs.append(torchvision.models.resnet18(pretrained = True).to(device).state_dict())
+sd_fn = []
+sd_fn.append(torch.load('waterbird/waterbird_resnet18_epoch_15.pt'))
+sd_fn.append(torch.load('waterbird/waterbird_resnet101_epoch_13.pt'))
+sd_fn.append(torch.load('waterbird/waterbird_robust_resnet18_epoch_18.pt'))
 
 # ~ iid_ll = np.zeros(8)
 # ~ ood_ll = np.zeros(8)
@@ -135,7 +141,7 @@ for i in range(11):
 			xb = xb.to('cpu')
 	mj_acc[i] = mj_tot / mj_sz
 	mn_acc[i] = mn_tot / mn_sz
-	
+
 # ~ print(iid_ll)
 # ~ print(ood_ll)
 # ~ print(iid_zs)
