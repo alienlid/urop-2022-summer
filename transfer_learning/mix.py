@@ -40,9 +40,17 @@ test_loader = torch.utils.data.DataLoader(dataset = test_dataset, batch_size = 6
 # ~ model_fn_zs.fc = nn.Linear(512, 10)
 # ~ model_fn_zs.to(device)
 
-model = torchvision.models.resnet18()
-model.fc = nn.Linear(512, 2)
-model.to(device)
+model = []
+model.append(torchvision.models.resnet18())
+model[0].fc = nn.Linear(512, 2)
+model[0] = model[0].to(device)
+model.append(torchvision.models.resnet101())
+model[1].fc = nn.Linear(2048, 2)
+model[1] = model[1].to(device)
+m, _ = make_and_restore_model(arch = 'resnet18', dataset = ImageNet('/mnt/cfs/datasets/pytorch_imagenet'))
+model.append(m)
+model[2].fc = nn.Linear(512, 2)
+model[2] = model[2].to(device)
 
 # ~ sd_fn = torch.load(f'gaussian_blur/{shortcut}-{severity}-fn.pt')
 # ~ sd_ll = torch.load(f'gaussian_blur/{shortcut}-{severity}-ll.pt')
@@ -56,6 +64,8 @@ sd_fn.append(torch.load('waterbird/waterbird_resnet18_epoch_15.pt'))
 sd_fn.append(torch.load('waterbird/waterbird_resnet101_epoch_13.pt'))
 sd_fn.append(torch.load('waterbird/waterbird_robust_resnet18_epoch_18.pt'))
 
+name = ['resnet18', 'resnet101', 'robust_resnet18']
+
 # ~ iid_ll = np.zeros(8)
 # ~ ood_ll = np.zeros(8)
 # ~ iid_zs = np.zeros(8)
@@ -64,107 +74,109 @@ sd_fn.append(torch.load('waterbird/waterbird_robust_resnet18_epoch_18.pt'))
 mj_acc = np.zeros(11)
 mn_acc = np.zeros(11)
 
-for i in range(11):
-	a = i / 10
-	# ~ sd = model_fn_ll.state_dict()
-	sd = model.state_dict()
-	for key in sd:
-		if key in ["fc.weight", "fc.bias"]:
-			sd[key] = sd_fn[key]
-		else:
-			sd[key] = (1 - a) * sd_fn[key] + a * sd_zs[key]
-	# ~ model_fn_ll.load_state_dict(sd)
-	# ~ model_fn_ll.eval()
-	# ~ for key in ["fc.weight", "fc.bias"]:
-		# ~ sd[key] = sd_fn[key]
-	# ~ model_fn_zs.load_state_dict(sd)
-	# ~ model_fn_zs.eval()
-	model.load_state_dict(sd)
-	model.eval()
-	# ~ correct = 0
-	# ~ total = 0
-	# ~ for x, y in IID_test_loader:
-		# ~ x = x.to(device)
-		# ~ pred = model_fn_ll(x)
-		# ~ total += y.size(0)
-		# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
-		# ~ x = x.to('cpu')
-	# ~ iid_ll[i] = correct / total
-	# ~ correct = 0
-	# ~ total = 0
-	# ~ for x, y in OOD_test_loader:
-		# ~ x = x.to(device)
-		# ~ pred = model_fn_ll(x)
-		# ~ total += y.size(0)
-		# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
-		# ~ x = x.to('cpu')
-	# ~ ood_ll[i] = correct / total
-	# ~ correct = 0
-	# ~ total = 0
-	# ~ for x, y in IID_test_loader:
-		# ~ x = x.to(device)
-		# ~ pred = model_fn_zs(x)
-		# ~ total += y.size(0)
-		# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
-		# ~ x = x.to('cpu')
-	# ~ iid_zs[i] = correct / total
-	# ~ correct = 0
-	# ~ total = 0
-	# ~ for x, y in OOD_test_loader:
-		# ~ x = x.to(device)
-		# ~ pred = model_fn_zs(x)
-		# ~ total += y.size(0)
-		# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
-		# ~ x = x.to('cpu')
-	# ~ ood_zs[i] = correct / total
-	mj_tot = 0
-	mj_sz = 0
-	mn_tot = 0
-	mn_sz = 0
-	with torch.no_grad():
-		for xb, yb, mb in test_loader:
-			xb = xb.to(device, non_blocking = True)
-			with autocast(enabled = True):
-				logits = model(xb)
-			preds = logits.argmax(-1).to('cpu')
-			is_correct = (preds == yb).float().numpy()
-			yb = yb.numpy()
-			for is_c, y, m in zip(is_correct, yb, mb):
-				# tot[int(y)][int(m[0])] += int(is_c)
-				# sz[int(y)][int(m[0])] += 1
-				if int(y) == int(m[0]):
-					mj_tot += int(is_c)
-					mj_sz += 1
-				else:
-					mn_tot += int(is_c)
-					mn_sz += 1
-			xb = xb.to('cpu')
-	mj_acc[i] = mj_tot / mj_sz
-	mn_acc[i] = mn_tot / mn_sz
+for j in range(3):
+	for i in range(11):
+		a = i / 10
+		# ~ sd = model_fn_ll.state_dict()
+		sd = model[j].state_dict()
+		for key in sd:
+			if key in ["fc.weight", "fc.bias"]:
+				sd[key] = sd_fn[j][key]
+			else:
+				sd[key] = (1 - a) * sd_fn[j][key] + a * sd_zs[j][key]
+		# ~ model_fn_ll.load_state_dict(sd)
+		# ~ model_fn_ll.eval()
+		# ~ for key in ["fc.weight", "fc.bias"]:
+			# ~ sd[key] = sd_fn[key]
+		# ~ model_fn_zs.load_state_dict(sd)
+		# ~ model_fn_zs.eval()
+		model[j].load_state_dict(sd)
+		model[j].eval()
+		# ~ correct = 0
+		# ~ total = 0
+		# ~ for x, y in IID_test_loader:
+			# ~ x = x.to(device)
+			# ~ pred = model_fn_ll(x)
+			# ~ total += y.size(0)
+			# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
+			# ~ x = x.to('cpu')
+		# ~ iid_ll[i] = correct / total
+		# ~ correct = 0
+		# ~ total = 0
+		# ~ for x, y in OOD_test_loader:
+			# ~ x = x.to(device)
+			# ~ pred = model_fn_ll(x)
+			# ~ total += y.size(0)
+			# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
+			# ~ x = x.to('cpu')
+		# ~ ood_ll[i] = correct / total
+		# ~ correct = 0
+		# ~ total = 0
+		# ~ for x, y in IID_test_loader:
+			# ~ x = x.to(device)
+			# ~ pred = model_fn_zs(x)
+			# ~ total += y.size(0)
+			# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
+			# ~ x = x.to('cpu')
+		# ~ iid_zs[i] = correct / total
+		# ~ correct = 0
+		# ~ total = 0
+		# ~ for x, y in OOD_test_loader:
+			# ~ x = x.to(device)
+			# ~ pred = model_fn_zs(x)
+			# ~ total += y.size(0)
+			# ~ correct += (pred.to('cpu').argmax(1) == y).sum()
+			# ~ x = x.to('cpu')
+		# ~ ood_zs[i] = correct / total
+		mj_tot = 0
+		mj_sz = 0
+		mn_tot = 0
+		mn_sz = 0
+		with torch.no_grad():
+			for xb, yb, mb in test_loader:
+				xb = xb.to(device, non_blocking = True)
+				with autocast(enabled = True):
+					if j < 2:
+						logits = model[j](xb)
+					else:
+						logits, _ = model[j](xb)
+				preds = logits.argmax(-1).to('cpu')
+				is_correct = (preds == yb).float().numpy()
+				yb = yb.numpy()
+				for is_c, y, m in zip(is_correct, yb, mb):
+					# tot[int(y)][int(m[0])] += int(is_c)
+					# sz[int(y)][int(m[0])] += 1
+					if int(y) == int(m[0]):
+						mj_tot += int(is_c)
+						mj_sz += 1
+					else:
+						mn_tot += int(is_c)
+						mn_sz += 1
+				xb = xb.to('cpu')
+		mj_acc[i] = mj_tot / mj_sz
+		mn_acc[i] = mn_tot / mn_sz
+	print(mj_acc)
+	print(mn_acc)
+	plt.scatter(mj_acc, mn_acc, c = plt.cm.rainbow(np.linspace(0, 1, 11)))
 
 # ~ print(iid_ll)
 # ~ print(ood_ll)
 # ~ print(iid_zs)
 # ~ print(ood_zs)
 
-print(mj_acc)
-print(mn_acc)
-
 # ~ plt.scatter(iid_ll, ood_ll, c = plt.cm.rainbow(np.linspace(0, 1, 8)))
 # ~ plt.scatter(iid_zs, ood_zs, c = plt.cm.rainbow(np.linspace(0, 1, 8)))
 
-plt.scatter(mj_acc, mn_acc, c = plt.cm.rainbow(np.linspace(0, 1, 11)))
-
-for i in range(11):
-	# ~ plt.annotate(f'a = {i / 10}, ll', (iid_ll[i], ood_ll[i]))
-	# ~ plt.annotate(f'a = {i / 10}, zs', (iid_zs[i], ood_zs[i]))
-	plt.annotate(f'a = {i / 10}', (mj_acc[i], mn_acc[i]))
+	for i in range(11):
+		# ~ plt.annotate(f'a = {i / 10}, ll', (iid_ll[i], ood_ll[i]))
+		# ~ plt.annotate(f'a = {i / 10}, zs', (iid_zs[i], ood_zs[i]))
+		plt.annotate(f'a = {i / 10}, ' + name[j], (mj_acc[i], mn_acc[i]))
 
 # ~ plt.xlabel('IID accuracy')
 # ~ plt.ylabel('OOD accuracy')
 plt.xlabel('Majority Accuracy')
 plt.ylabel('Minority Accuracy')
 fig = plt.gcf()
-fig.set_size_inches(14, 10)
-fig.savefig(f'mix-wb', dpi = 200)
+fig.set_size_inches(18, 12)
+fig.savefig(f'mix-wb', dpi = 250)
 
